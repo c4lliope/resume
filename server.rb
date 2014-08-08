@@ -2,5 +2,9 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 get '/' do
-  send_file './content.json'
+  erb :index
+end
+
+get '/style' do
+  scss :style
 end
