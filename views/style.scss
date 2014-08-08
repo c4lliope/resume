@@ -4,3 +4,38 @@
 section {
   @include outer-container;
 }
+
+h1, h2, h3, h4 {
+  font-family: 'Adelle';
+}
+
+body {
+  font-family: 'Museo Sans';
+}
+
+#header {
+  margin-top: $gutter;
+  img#profile {
+    @include span-columns(3 of 12);
+    @include shift(1);
+  }
+  p {
+    @include span-columns(7 of 12);
+  }
+}
+
+.contact {
+  margin-top: $gutter;
+  padding-top: $gutter;
+  padding-bottom: $gutter;
+  border-top: 2px solid #CCC;
+  border-bottom: 2px solid #CCC;
+  div {
+    i, span {
+      display: block;
+      @include fill-parent;
+    }
+    @include span-columns(3 of 12);
+    text-align: center;
+  }
+}
