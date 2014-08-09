@@ -9,6 +9,10 @@ h1, h2, h3, h4 {
   font-family: 'Adelle';
 }
 
+p {
+  margin-top: 0;
+}
+
 body {
   font-family: 'Museo Sans';
 }
@@ -17,10 +21,11 @@ body {
   margin-top: $gutter;
   img#profile {
     @include span-columns(3 of 12);
-    @include shift(1);
   }
-  p {
-    @include span-columns(7 of 12);
+  h1, p {
+    @include shift(1);
+    @include span-columns(8 of 12);
+    @include omega;
   }
 }
 
@@ -28,8 +33,8 @@ body {
   margin-top: $gutter;
   padding-top: $gutter;
   padding-bottom: $gutter;
-  border-top: 2px solid #CCC;
-  border-bottom: 2px solid #CCC;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
   div {
     i, span {
       display: block;
