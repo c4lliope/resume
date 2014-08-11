@@ -52,3 +52,71 @@ p {
     text-align: center;
   }
 }
+
+@mixin rotate($angle) {
+  display: block;
+  -webkit-transform: rotate($angle);
+  -moz-transform: rotate($angle);
+  -ms-transform: rotate($angle);
+  -o-transform: rotate($angle);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/*------ Timeline --------*/
+
+#experiences {
+  @include span-columns(11);
+  @include shift(1);
+}
+.experience {
+  @include fill-parent;
+  .dates {
+    @include rotate(90deg);
+  }
+
+  .card {
+    @include span-columns(10 of 11);
+    background-color: white;
+    border: 1px solid #CCC;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px darken($base-background-color, 10);
+
+    .position {
+      @include fill-parent;
+      border-bottom: 1px solid #CCC;
+      overflow: hidden;
+
+      font-family: $header-font-stack;
+      .location, .title {
+        padding: $gutter/2;
+      }
+      .location {
+        padding-left: $gutter;
+        background-color: #AAA;
+        @include span-columns(3 of 10);
+      }
+      .title {
+        padding-left: 0px;
+        @include span-columns(7 of 10);
+      }
+    }
+
+    .skills {
+      @include span-columns(3 of 10);
+      padding-left: $gutter;
+      i {
+        padding-right: $gutter/2;
+      }
+    }
+    .bullets {
+      @include span-columns(7 of 10);
+      @include omega;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0px;
+    line-height: $gutter;
+  }
+}
