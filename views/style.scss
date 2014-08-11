@@ -10,6 +10,7 @@ $base-background-color: rgb(245, 245, 240); // From https://upcase.com
 body {
   font-family: $body-font-stack;
   background-color: $base-background-color;
+  line-height: $gutter;
 }
 
 h1, h2, h3, h4 {
@@ -22,6 +23,11 @@ h1, h2, h3, h4 {
 
 p {
   margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
 }
 
 #header {
@@ -53,15 +59,6 @@ p {
   }
 }
 
-@mixin rotate($angle) {
-  display: block;
-  -webkit-transform: rotate($angle);
-  -moz-transform: rotate($angle);
-  -ms-transform: rotate($angle);
-  -o-transform: rotate($angle);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-
 /*------ Timeline --------*/
 
 #experiences {
@@ -69,13 +66,15 @@ p {
   @include shift(1);
 }
 .experience {
+  margin-top: $gutter;
   @include fill-parent;
   .dates {
-    @include rotate(90deg);
+    padding-left: $gutter;
   }
 
   .card {
-    @include span-columns(10 of 11);
+    @include span-columns(11 of 11);
+    @include omega;
     background-color: white;
     border: 1px solid #CCC;
     border-radius: 2px;
@@ -93,30 +92,27 @@ p {
       .location {
         padding-left: $gutter;
         background-color: #AAA;
-        @include span-columns(3 of 10);
+        @include span-columns(3 of 11);
       }
       .title {
         padding-left: 0px;
-        @include span-columns(7 of 10);
+        @include span-columns(8 of 11);
       }
     }
 
     .skills {
-      @include span-columns(3 of 10);
+      @include span-columns(3 of 11);
       padding-left: $gutter;
       i {
         padding-right: $gutter/2;
       }
     }
     .bullets {
-      @include span-columns(7 of 10);
+      @include span-columns(8 of 11);
       @include omega;
     }
   }
 
-  ul {
-    list-style: none;
-    padding-left: 0px;
-    line-height: $gutter;
-  }
+  margin-bottom: $gutter;
+  overflow: hidden;
 }
