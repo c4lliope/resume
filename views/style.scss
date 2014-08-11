@@ -1,20 +1,27 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
-section {
-  @include outer-container;
+/* TODO: flesh out these variables */
+$body-font-stack: 'Museo Sans';
+$header-font-stack: 'Adelle';
+
+$base-background-color: rgb(245, 245, 240); // From https://upcase.com
+
+body {
+  font-family: $body-font-stack;
+  background-color: $base-background-color;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Adelle';
+  font-family: $header-font-stack;
+}
+
+#content {
+  @include outer-container;
 }
 
 p {
   margin-top: 0;
-}
-
-body {
-  font-family: 'Museo Sans';
 }
 
 #header {
@@ -23,19 +30,20 @@ body {
     @include span-columns(3 of 12);
   }
   h1, p {
-    @include shift(1);
-    @include span-columns(8 of 12);
+    @include span-columns(9 of 12);
     @include omega;
   }
+  @include clearfix;
 }
 
 .contact {
   margin-top: $gutter;
-  padding-top: $gutter;
-  padding-bottom: $gutter;
+  padding: $gutter/2 0;
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
+  overflow: hidden;
   div {
+    display: block;
     i, span {
       display: block;
       @include fill-parent;
