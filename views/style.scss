@@ -44,6 +44,7 @@ ul {
 
 .contact {
   margin-top: $gutter;
+  margin-bottom: $gutter;
   padding: $gutter/2 0;
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
@@ -64,7 +65,6 @@ ul {
 #experiences {
   @include span-columns(9);
   .experience {
-    margin-top: $gutter;
     @include fill-parent;
     .dates {
       padding-left: $gutter;
@@ -118,5 +118,28 @@ ul {
     }
 
     margin-bottom: $gutter;
+  }
+}
+
+#sidebar {
+  @include span-columns(3 of 12);
+
+  #skills {
+    h2 { text-align: center; }
+    .skill {
+      @include clearfix;
+      .name {
+        @include span-columns(1.5 of 3);
+        text-align: right;
+      }
+      .proficiency {
+        display: inline-block;
+        @include span-columns(1.5 of 3);
+        @include omega;
+        .skill-bubble {
+          @include span-columns(1 of 5);
+        }
+      }
+    }
   }
 }
