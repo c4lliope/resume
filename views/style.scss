@@ -118,24 +118,27 @@ ul {
     }
 
     $card-tip-size: 20px;
+    $border-width: 1px;
+    $tooltip-color: #AAA;
+    $border-color: #CCC;
 
-    &:before {
+    &:before, &:after {
       position: absolute;
       display: inline-block;
-      border-right: $card-tip-size+2 solid #CCC;
-      border-bottom: $card-tip-size+2 solid transparent;
-      left: -$card-tip-size - 2px;
-      top: -1px;
       content: '';
     }
+    &:before /* Border effect */ {
+      $pseudo-border-size: $card-tip-size + 2 * $border-width;
+      border-right: $pseudo-border-size solid $border-color;
+      border-bottom: $pseudo-border-size solid transparent;
+      left: -1 * $pseudo-border-size;
+      top: -1 * $border-width;
+    }
     &:after {
-      position: absolute;
-      display: inline-block;
       border-bottom: $card-tip-size solid transparent;
-      border-right: $card-tip-size solid #AAA;
+      border-right: $card-tip-size solid $tooltip-color;
       left: -$card-tip-size;
       top: 0px;
-      content: '';
     }
   }
 
