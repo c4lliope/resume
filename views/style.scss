@@ -11,6 +11,7 @@ body {
   font-family: $body-font-stack;
   background-color: $base-background-color;
   line-height: $gutter;
+  @include background(url("/background.png"));
 }
 
 h1, h2, h3, h4 {
