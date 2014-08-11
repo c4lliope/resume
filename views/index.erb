@@ -105,10 +105,10 @@
         <div id="skills">
           <h2>Skills</h2>
           <%
-            Skill = Struct.new(:name, :level, :color)
-            skills = [Skill.new('Ruby', 5, 'red'),
-            Skill.new('HTML/CSS', 5, 'blue'),
-            Skill.new('Design', 3, 'green')]
+            Skill = Struct.new(:name, :level, :icon)
+            skills = [Skill.new('Ruby', 5, 'ruby'),
+            Skill.new('HTML/CSS', 5, 'html'),
+            Skill.new('Design', 3, 'design')]
           %>
 
             <% skills.each do |skill| %>
@@ -116,7 +116,7 @@
             <div class="name"><%= skill.name %></div>
             <div class="proficiency">
               <% skill.level.times do %>
-                <img class="skill-bubble" src="<%= "/#{skill.color}_circle.svg"%>">
+                <img class="skill-bubble" src="<%= "/#{skill.icon}.svg"%>">
               <% end %>
             </div>
           </div>

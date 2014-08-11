@@ -137,9 +137,11 @@ ul {
         @include span-columns(1.5 of 3);
         @include omega;
         .skill-bubble {
+          padding-top: .2em;
           @include span-columns(1 of 5);
         }
       }
+      margin-bottom: $gutter/2;
     }
   }
 }
