@@ -62,85 +62,61 @@ ul {
 /*------ Timeline --------*/
 
 #experiences {
-  @include span-columns(11);
-  @include shift(1);
-}
-.experience {
-  margin-top: $gutter;
-  @include fill-parent;
-  .dates {
-    padding-left: $gutter;
-    font-weight: 700;
-    opacity: 0.3;
-  }
-
-  .card {
-    position: relative;
-    @include span-columns(11 of 11);
-    @include omega;
-    background-color: white;
-    border: 1px solid #CCC;
-    border-radius: 2px;
-    box-shadow: 0 2px 4px darken($base-background-color, 10);
-
-    .position {
-      @include fill-parent;
-      border-bottom: 1px solid #CCC;
-      overflow: hidden;
-
-      font-family: $header-font-stack;
-      .location, .title {
-        padding-top: $gutter/2;
-        padding-bottom: $gutter/4;
-      }
-      .location {
-        padding-left: $gutter;
-        background-color: #AAA;
-        @include span-columns(3 of 11);
-        font-weight: bold;
-      }
-      .title {
-        padding-left: 0px;
-        @include span-columns(8 of 11);
-      }
-    }
-
-    .skills {
-      @include span-columns(3 of 11);
+  @include span-columns(9);
+  .experience {
+    margin-top: $gutter;
+    @include fill-parent;
+    .dates {
       padding-left: $gutter;
-      i {
-        padding-right: $gutter/2;
+      font-weight: 700;
+      opacity: 0.3;
+    }
+
+    .card {
+      position: relative;
+      margin-bottom: $gutter;
+      @include span-columns(9 of 9);
+      @include omega;
+      background-color: white;
+      border: 1px solid #CCC;
+      border-radius: 2px;
+      box-shadow: 0 2px 4px darken($base-background-color, 10);
+
+      .position {
+        @include fill-parent;
+        border-bottom: 1px solid #CCC;
+        overflow: hidden;
+
+        font-family: $header-font-stack;
+        .location, .title {
+          padding-top: $gutter/2;
+          padding-bottom: $gutter/4;
+        }
+        .location {
+          padding-left: $gutter;
+          background-color: #AAA;
+          @include span-columns(3 of 9);
+          font-weight: bold;
+        }
+        .title {
+          padding-left: 0px;
+          @include span-columns(6 of 9);
+        }
+      }
+
+      .skills {
+        @include span-columns(3 of 9);
+        padding-left: $gutter;
+        i {
+          padding-right: $gutter/2;
+        }
+      }
+      .bullets {
+        @include span-columns(6 of 9);
+        @include omega;
       }
     }
-    .bullets {
-      @include span-columns(8 of 11);
-      @include omega;
-    }
 
-    $card-tip-size: 20px;
-    $border-width: 1px;
-    $tooltip-color: #AAA;
-    $border-color: #CCC;
-
-    &:before, &:after {
-      position: absolute;
-      display: inline-block;
-      content: '';
-    }
-    &:before /* Border effect */ {
-      $pseudo-border-size: $card-tip-size + 2 * $border-width;
-      border-right: $pseudo-border-size solid $border-color;
-      border-bottom: $pseudo-border-size solid transparent;
-      left: -1 * $pseudo-border-size;
-      top: -1 * $border-width;
-    }
-    &:after {
-      border-bottom: $card-tip-size solid transparent;
-      border-right: $card-tip-size solid $tooltip-color;
-      left: -$card-tip-size;
-      top: 0px;
-    }
+    margin-bottom: $gutter;
   }
-
-  margin-bottom: $gutter;
 }
