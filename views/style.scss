@@ -75,6 +75,7 @@ ul {
   }
 
   .card {
+    position: relative;
     @include span-columns(11 of 11);
     @include omega;
     background-color: white;
@@ -115,8 +116,28 @@ ul {
       @include span-columns(8 of 11);
       @include omega;
     }
+
+    $card-tip-size: 20px;
+
+    &:before {
+      position: absolute;
+      display: inline-block;
+      border-right: $card-tip-size+2 solid #CCC;
+      border-bottom: $card-tip-size+2 solid transparent;
+      left: -$card-tip-size - 2px;
+      top: -1px;
+      content: '';
+    }
+    &:after {
+      position: absolute;
+      display: inline-block;
+      border-bottom: $card-tip-size solid transparent;
+      border-right: $card-tip-size solid #AAA;
+      left: -$card-tip-size;
+      top: 0px;
+      content: '';
+    }
   }
 
   margin-bottom: $gutter;
-  overflow: hidden;
 }
