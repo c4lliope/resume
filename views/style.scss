@@ -124,11 +124,12 @@ ul {
 
 #sidebar {
   @include span-columns(3 of 12);
+  h2 { text-align: center; }
 
   #skills {
-    h2 { text-align: center; }
     .skill {
       @include clearfix;
+      margin-bottom: $gutter/2;
       .name {
         @include span-columns(1.5 of 3);
         text-align: right;
@@ -142,7 +143,25 @@ ul {
           @include span-columns(1 of 5);
         }
       }
+    }
+    margin-bottom: 2 * $gutter;
+  }
+  #education {
+    .topic {
+      @include clearfix;
+      @include fill-parent;
       margin-bottom: $gutter/2;
+      .gpa {
+        text-align: right;
+        @include span-columns(2 of 8);
+        @include omega;
+      }
+      .name {
+        @include span-columns(6 of 8);
+      }
+      &.summary {
+        border-bottom: 1px solid black;
+      }
     }
   }
 }
