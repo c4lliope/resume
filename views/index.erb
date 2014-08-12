@@ -8,124 +8,20 @@
   <body>
     <div id="content">
       <div id="header">
-        <img id="profile" alt="Grayson" src="http://2014.eurucamp.org/images/content/speakers/gwright.jpg"></img>
-        <h1>Hello! I'm Grayson, let's get to know each other.</h1>
-
-        <p>
-        <!-- TODO: shorten, make more concise -->
-        <!-- TODO: write this to be what the company wants to hear – probably will
-        be read by an existing member of their team looking for ...-->
-        I'm a full-stack web developer and designer. I build products with a focus on the user,
-        and creating software that turns mundane tasks into wonderful experiences.
-        I can spend hours selecting the perfect font and color scheme, or optimizing the sign-up
-        page to remove all friction for new customers. At the same time, I come from a
-        heavy computer science background so I'm not afraid of optimizing algorithms
-        to handle large data sets.
-        </p>
-        <p>
-        I use TDD to ensure I'm writing loosely coupled, highly reusable code, and I think there
-        are few things more beautiful than a good refactoring.
-        </p>
-        <!-- TODO trim
-        <p>
-        When I'm not playing with my vim configuration to save keystrokes,
-        I like rock climbing, cycling, and practicing landscape photography.
-        I love to travel and learn new (both natural <em>and</em> computer) languages.
-        I love to teach, either at local meetup groups or in large lecture halls at conferences.
-        </p>
-        <p>
-        I'm looking for a great team that loves building awesome products.
-        I expect tough usability and technical challenges, and work that pushes the
-        boundaries of what is currently being done in web technology.
-        </p>
-        <p>
-        If that sounds like your team, I'd love to hear from you. If your team takes
-        pride in inspiring joy in your users, if usability problems keep you up at night,
-        or if you are learning a new programming language or paradigm for fun on the
-        weekends, I think we might be a very good match.
-        </p>
-        -->
+        <%= erb :letter %>
       </div>
 
-      <div class="contact">
-        <div class="github">
-          <i class="fa fa-github fa-lg"></i>
-          <span>graysonwright</span>
-        </div>
-        <div class="website">
-          <i class="fa fa-globe fa-lg"></i>
-          <span>graysonwright.com</span>
-        </div>
-        <div class="email">
-          <i class="fa fa-envelope fa-lg"></i>
-          <span>wright.grayson@gmail.com</span>
-        </div>
-        <div class="twitter">
-          <i class="fa fa-twitter fa-lg"></i>
-          <span>grayson_wright</span>
-        </div>
-      </div>
+      <%= erb :contact %>
 
       <div id="experiences">
         <% 4.times do %>
-          <div class="experience">
-            <span class="dates">May 2012 - July 2012</span>
-            <div class="card">
-              <div class="position">
-                <div class="location">Microsoft</div>
-                <div class="title">SDET Intern</div>
-              </div>
-              <ul class="skills">
-                <li class="skill">
-                <i class="fa fa-code fa-lg"></i>
-                <span>C++</span>
-                </li>
-                <li class="skill">
-                <i class="fa fa-jsfiddle fa-lg"></i>
-                <span>Javascript</span>
-                </li>
-                <li class="skill">
-                <i class="fa fa-terminal fa-lg"></i>
-                <span>MS/DOS scripting</span>
-                </li>
-              </ul>
-              <div class="bullets">
-                <ul>
-                  <li>Developed a new testing framework for printer drivers</li>
-                  <li>Worked with COM, Javascript, XML, and C++</li>
-                  <li>Focus on creating a flexible and extensible system</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <%= erb :experience %>
         <%end%>
       </div>
 
       <div id="sidebar">
-        <div id="skills">
-          <h2>Skills</h2>
-          <%
-            Skill = Struct.new(:name, :level, :icon)
-            skills = [Skill.new('Ruby', 5, 'ruby'),
-            Skill.new('HTML & CSS', 5, 'html'),
-            Skill.new('Command Line', 4, 'terminal'),
-            Skill.new('C++', 4, 'plus'),
-            Skill.new('Testing', 4, 'testing'),
-            Skill.new('Design', 3, 'design'),
-            ]
-          %>
+        <%= erb :skills %>
 
-            <% skills.each do |skill| %>
-          <div class="skill">
-            <div class="name"><%= skill.name %></div>
-            <div class="proficiency">
-              <% skill.level.times do %>
-                <img class="skill-bubble" src="<%= "/#{skill.icon}.svg"%>">
-              <% end %>
-            </div>
-          </div>
-          <%end%>
-        </div>
         <!--
         <h2>Possible Icons</h2>
         <i class="fa fa-code fa-lg"></i>
