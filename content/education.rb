@@ -1,22 +1,5 @@
 module Education
   class Topic
-    def self.store
-      @@store ||= []
-    end
-
-    def self.all
-      store
-    end
-
-    def save
-      self.class.store << self
-      self
-    end
-
-    def self.destroy_all
-      @@store = nil
-    end
-
     class InvalidRecord < StandardError; end
 
     def initialize name, gpa, tags=nil

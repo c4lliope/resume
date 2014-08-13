@@ -46,12 +46,4 @@ class EducationTopicTest < Minitest::Test
     topic = Education::Topic.new 'math', '3.85'
     assert_equal '3.9', topic.formatted_gpa
   end
-
-  def test_topic_storage
-    topic = Education::Topic.new 'math', '3.85'
-    topic.save
-    assert_equal [topic], Education::Topic.all
-    Education::Topic.destroy_all
-    assert_equal [], Education::Topic.all
-  end
 end
