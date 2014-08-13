@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
+require_relative 'content/data'
+
 get '/' do
   erb :index
 end

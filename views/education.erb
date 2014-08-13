@@ -1,24 +1,8 @@
 <div id="education">
   <h2>Education</h2>
 
-  <% Topic = Struct.new(:name, :gpa, :class)
-
-  topics = [
-    Topic.new('Michigan State University', 3.85, 'summary'),
-    Topic.new('Security', 4.0),
-    Topic.new('Networks', 4.0),
-    Topic.new('Algorithms', 4.0),
-    Topic.new('Design Patterns', 4.0),
-    Topic.new('Artificial Intelligence', 3.5),
-    Topic.new('Media Processing', 4.0),
-    Topic.new('Compilers', 4.0),
-    Topic.new('Computer Graphics', 4.0),
-    Topic.new('Databases', 4.0),
-    Topic.new('Operating Systems', 4.0),
-  ] %>
-
-  <% topics.each do |topic| %>
-    <div class="topic <%= topic.class || '' %>">
+  <% Education::Topic.all.each do |topic| %>
+    <div class="topic <%= topic.tags %>">
       <span class="name"><%= topic.name %></span>
       <span class="gpa"><%= topic.gpa %></span>
     </div>
