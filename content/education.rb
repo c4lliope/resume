@@ -1,23 +1,9 @@
+require_relative 'persistance'
+
 module Education
   class Topic
-    def self.store
-      @@store ||= []
-    end
-
-    def self.all
-      store
-    end
-
-    def save
-      Topic.store << self
-      self
-    end
-
-    def self.destroy_all
-      @@store = nil
-    end
-
     class InvalidRecord < StandardError; end
+    include Persistance
 
     def initialize name, gpa, tags=nil
       @name, @gpa, @tags = name, gpa, tags.to_s

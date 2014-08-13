@@ -54,7 +54,6 @@ class SkillTest < Minitest::Test
   end
 
   def test_skill_storage
-    skip
     skill = Skill.new 'ruby', 5, 'ruby'
     skill.save
     assert_equal [skill], Skill.all

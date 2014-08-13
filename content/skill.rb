@@ -1,6 +1,10 @@
+require_relative 'persistance'
+
 class Skill
   class InvalidRecord < StandardError; end
   class IconNotAvailable < StandardError; end
+
+  include Persistance
 
   def initialize name, level, icon=nil
     @name, @level, @icon = name, level, icon

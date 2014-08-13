@@ -1,4 +1,5 @@
 require_relative 'education'
+require_relative 'skill'
 
 Education::Topic.new('Michigan State University', 3.85, 'summary').save
 Education::Topic.new('Security', 4.0).save
