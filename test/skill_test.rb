@@ -60,4 +60,12 @@ class SkillTest < Minitest::Test
     Skill.destroy_all
     assert_equal [], Skill.all
   end
+
+  def test_stored_skills_are_sorted
+    Skill.new('testing', 4).save
+    Skill.new('ruby', 5).save
+    Skill.new('script', 3).save
+
+    assert_equal [5,4,3], Skill.sorted.map(&:level)
+  end
 end

@@ -1,10 +1,27 @@
-require_relative 'persistance'
-
 class Skill
   class InvalidRecord < StandardError; end
   class IconNotAvailable < StandardError; end
 
-  include Persistance
+  def self.store
+    @@store ||= []
+  end
+
+  def self.all
+    store
+  end
+
+  def save
+    self.class.store << self
+    self
+  end
+
+  def self.destroy_all
+    @@store = nil
+  end
+
+  def self.sorted
+    all.sort_by(&:level).reverse
+  end
 
   def initialize name, level, icon=nil
     @name, @level, @icon = name, level, icon
