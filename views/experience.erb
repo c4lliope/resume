@@ -1,29 +1,23 @@
 <div class="experience">
-  <span class="dates">May 2012 - July 2012</span>
+  <span class="dates"><%= experience.dates %></span>
   <div class="card">
     <div class="position">
-      <div class="location">Microsoft</div>
-      <div class="title">SDET Intern</div>
+      <div class="location"><%= experience.location %></div>
+      <div class="title"><%= experience.title %></div>
     </div>
     <ul class="skills">
-      <li class="skill">
-      <i class="fa fa-code fa-lg"></i>
-      <span>C++</span>
-      </li>
-      <li class="skill">
-      <i class="fa fa-jsfiddle fa-lg"></i>
-      <span>Javascript</span>
-      </li>
-      <li class="skill">
-      <i class="fa fa-terminal fa-lg"></i>
-      <span>MS/DOS scripting</span>
-      </li>
+      <% experience.skills.each do |skill, icon| %>
+        <li class="skill">
+        <i class="fa fa-<%=icon%> fa-lg"></i>
+        <span><%=skill%></span>
+        </li>
+      <% end %>
     </ul>
     <div class="bullets">
       <ul>
-        <li>Developed a new testing framework for printer drivers</li>
-        <li>Worked with COM, Javascript, XML, and C++</li>
-        <li>Focus on creating a flexible and extensible system</li>
+        <% experience.bullets.each do |bullet| %>
+          <li><%= bullet %></li>
+        <% end %>
       </ul>
     </div>
   </div>

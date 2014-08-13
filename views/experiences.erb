@@ -1,0 +1,72 @@
+<% Experience = Struct.new(:location, :dates, :title, :skills, :bullets, :class) %>
+
+<%
+  experiences = []
+  
+=begin
+  experiences << Experience.new('Carbon Cash, LLC', 'Dec 2013 - Jun 2014', 'API Designer & Developer',
+                              { 'Ruby' => 'code',
+                                'Testing' => 'code',
+                                },
+                                [ 
+      "Built and deployed a versioned API backend powering iOS and Ember apps",
+      "Integration with local power company APIs to retrieve energy usage data",
+      " w"
+  ])
+=end
+  experiences << Experience.new('Independent', 'Aug 2012 - Present', 'Web Consultant',
+                                {},
+  [ "Contract work building APIs, communication tools, and marketing sites",
+    "Use of the Ruby on Rails framework for fast, flexable, and testable web development",
+    "Focus on test-driven development and continuous integration testing",
+    "Integration with many web services, including YouTube, Amazon, and private APIs",
+    "Conduct several usability studies to optimize user experience",
+  ])
+  experiences << Experience.new('Eurucamp 2014', 'Aug 2014', 'Conference Talk: Service-Oriented Architecture',
+                                {},
+                                [ 'Live-coding demonstration of breaking services out of a monolithic application',
+                                  'Topics include messaging protocols, alternative data stores and web frameworks'
+  ], 'community')
+  experiences << Experience.new('ACM at MSU', 'Mar 2011 - May 2014', 'Vice President and Webmaster',
+                                {},
+                                [ 'Organized student events on Computer Science and Engineering topics',
+                                  'Work with corporate sponsors to host technology talks and seminars',
+                                  'Give presentations on various aspects of computing and programming',
+                                  'Organize monthly programming contests to prepare students for the ACM ICPC competition'
+  ], 'community')
+  experiences << Experience.new('Microsoft', 'May - July 2012', 'SDET Intern',
+                              { 'C++' => 'code',
+                                'Javascript' => 'jsfiddle',
+                                'MS/DOS Scripting' => 'terminal'},
+                                [ "Developed a new testing framework for printer drivers",
+                                  "Worked with COM, Javascript, XML, and C++",
+                                  "Focus on creating a flexible and extensible system",
+  ])
+  experiences << Experience.new('Spectrum Health', 'Sep - Dec 2012', 'Medication Shortages Dashboard',
+                                {},
+  [ 'Creation of an "issue tracker" for medication shortages',
+    'Contract work for a local company through the MSU CSE capstone course',
+  ])
+  experiences << Experience.new('MSU', 'Sep 2011 - May 2012', 'Digital Evolution Research',
+                                {},
+                                [ 'NSF-funded research on the evolution of group formation in predator-prey systems',
+                                  'Use of evolutionary computation to shape the behaviors of digital organisms',
+                                  'Responsible for implementing predator behavior in C++',
+                                  'Use of the git version control system and unit testing',
+  ])
+  experiences << Experience.new('MSU', 'Sep - Dec 2011', 'Teaching Assistant: Introduction to Programming',
+                                {},
+                                [ 'Aided a professor by leading lab sections and grading programming projects in Python',
+                                  'Hosted weekly help room sessions to work with and teach students individually',
+  ])
+  experiences << Experience.new('MSU', 'Sep 2010 - May 2011', 'ICT Network Research',
+                                {},
+                                [ 'NSF-funded team research on the effects of regulation of ICT networks',
+                                  'Used Learning Classifier Systems to evolve a realistic simulation of an ICT network',
+                                  'Responsible for creating data visualization interfaces in Java',
+                                  'Studied evolutionary programming and machine learning techniques'
+  ])
+%>
+<% experiences.each do |experience| %>
+  <%= erb :experience, locals: {experience: experience} %>
+<%end%>
