@@ -19,6 +19,12 @@ class EducationTopicTest < Minitest::Test
     end
   end
 
+  def test_topic_can_have_tags
+    topic = Education::Topic.new 'math', 4.0, 'summary'
+    assert_equal true, topic.valid?
+    assert_equal "summary", topic.tags
+  end
+
   def test_gpa_is_at_most_4
     assert_raises(Education::Topic::InvalidRecord) do
       Education::Topic.new 'math', 4.1

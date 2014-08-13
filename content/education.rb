@@ -19,13 +19,13 @@ module Education
 
     class InvalidRecord < StandardError; end
 
-    def initialize name, gpa
-      @name, @gpa = name, gpa
+    def initialize name, gpa, tags=nil
+      @name, @gpa, @tags = name, gpa, tags.to_s
 
       raise InvalidRecord unless valid?
     end
 
-    attr_reader :name
+    attr_reader :name, :tags
 
     def gpa
       @gpa.to_f
