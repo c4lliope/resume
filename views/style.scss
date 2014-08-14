@@ -37,7 +37,11 @@ ul {
   img#profile {
     @include span-columns(3 of 12);
   }
-  h1, p {
+  .letter {
+    h1 {
+      margin-top: 0;
+      line-height: 32px;
+    }
     @include span-columns(9 of 12);
     @include omega;
   }
