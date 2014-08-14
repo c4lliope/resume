@@ -14,7 +14,9 @@
       <%= erb :contact %>
 
       <div id="experiences">
-        <%= erb :experiences %>
+        <% @data['experiences'].each do |experience| %>
+          <%= erb :experience, locals: {experience: experience} %>
+        <%end%>
       </div>
 
       <div id="sidebar">

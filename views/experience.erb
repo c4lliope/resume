@@ -1,17 +1,17 @@
 <div class="experience">
-  <span class="dates"><%= experience.dates %></span>
+  <span class="dates"><%= experience['dates'] %></span>
   <div class="card">
-    <% if experience.category %>
+    <% if experience['category'] %>
       <div class="ribbon-wrapper">
-        <div class="ribbon <%= experience.category %>">
-          <%= experience.category %>
+        <div class="ribbon <%= experience['category'] %>">
+          <%= experience['category'] %>
         </div>
       </div>
     <% end %>
     <div class="position">
-      <span class="title"><%= experience.title %></span>
-      <span class="location"><%= experience.location %></span>
+      <span class="title"><%= experience['title'] %></span>
+      <span class="location"><%= experience['location'] %></span>
     </div>
-    <p class="description"><%= experience.description %>
+    <p class="description"><%= experience['description'] %>
   </div>
 </div>
