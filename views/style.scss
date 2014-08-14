@@ -156,9 +156,8 @@ ul {
       .name {
         @include span-columns(6 of 8);
       }
-      &.summary {
-        border-bottom: 1px solid black;
-      }
+      &.degree, &.school { font-weight: 700; }
+      &.school { border-bottom: 1px solid black; }
     }
   }
 }

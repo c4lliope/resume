@@ -1,9 +1,9 @@
 require 'sinatra'
 require 'sinatra/reloader'
-
-require_relative 'content/data'
+require 'json'
 
 get '/' do
+  @data =  JSON.parse File.read('content.json')
   erb :index
 end
 

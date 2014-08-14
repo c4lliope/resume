@@ -1,12 +1,12 @@
 <div id="skills">
   <h2>Skills</h2>
 
-  <% Skill.sorted.each do |skill| %>
+  <% @data['skills'].each do |skill| %>
     <div class="skill">
-      <div class="name"><%= skill.name %></div>
+      <div class="name"><%= skill['name'] %></div>
       <div class="proficiency">
-        <% skill.level.times do %>
-          <img class="skill-bubble" src="<%= "/#{skill.icon}.svg"%>">
+        <% skill['level'].times do %>
+          <img class="skill-bubble" src="<%= "/#{skill['icon']}.svg"%>">
         <% end %>
       </div>
     </div>
