@@ -2,23 +2,9 @@
   <span class="dates"><%= experience.dates %></span>
   <div class="card">
     <div class="position">
-      <div class="location"><%= experience.location %></div>
-      <div class="title"><%= experience.title %></div>
+      <span class="title"><%= experience.title %></span>
+      <span class="location"><%= experience.location %></span>
     </div>
-    <ul class="skills">
-      <% experience.skills.each do |skill, icon| %>
-        <li class="skill">
-        <i class="fa fa-<%=icon%> fa-lg"></i>
-        <span><%=skill%></span>
-        </li>
-      <% end %>
-    </ul>
-    <div class="bullets">
-      <ul>
-        <% experience.bullets.each do |bullet| %>
-          <li><%= bullet %></li>
-        <% end %>
-      </ul>
-    </div>
+      <p class="description"><%= experience.description %>
   </div>
 </div>

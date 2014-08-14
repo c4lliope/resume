@@ -1,71 +1,89 @@
-<% Experience = Struct.new(:location, :dates, :title, :skills, :bullets, :class) %>
+<% Experience = Struct.new(:location, :dates, :title, :description, :class) %>
 
 <%
   experiences = []
   
-=begin
-  experiences << Experience.new('Carbon Cash, LLC', 'Dec 2013 - Jun 2014', 'API Designer & Developer',
-                              { 'Ruby' => 'code',
-                                'Testing' => 'code',
-                                },
-                                [ 
-      "Built and deployed a versioned API backend powering iOS and Ember apps",
-      "Integration with local power company APIs to retrieve energy usage data",
-      " w"
-  ])
-=end
-  experiences << Experience.new('Independent', 'Aug 2012 - Present', 'Web Consultant',
-                                {},
-  [ "Contract work building APIs, communication tools, and marketing sites",
-    "Use of the Ruby on Rails framework for fast, flexable, and testable web development",
-    "Focus on test-driven development and continuous integration testing",
-    "Integration with many web services, including YouTube, Amazon, and private APIs",
-    "Conduct several usability studies to optimize user experience",
-  ])
-  experiences << Experience.new('Eurucamp 2014', 'Aug 2014', 'Conference Talk: Service-Oriented Architecture',
-                                {},
-                                [ 'Live-coding demonstration of breaking services out of a monolithic application',
-                                  'Topics include messaging protocols, alternative data stores and web frameworks'
-  ], 'community')
-  experiences << Experience.new('ACM at MSU', 'Mar 2011 - May 2014', 'Vice President and Webmaster',
-                                {},
-                                [ 'Organized student events on Computer Science and Engineering topics',
-                                  'Work with corporate sponsors to host technology talks and seminars',
-                                  'Give presentations on various aspects of computing and programming',
-                                  'Organize monthly programming contests to prepare students for the ACM ICPC competition'
-  ], 'community')
-  experiences << Experience.new('Microsoft', 'May - July 2012', 'SDET Intern',
-                              { 'C++' => 'code',
-                                'Javascript' => 'jsfiddle',
-                                'MS/DOS Scripting' => 'terminal'},
-                                [ "Developed a new testing framework for printer drivers",
-                                  "Worked with COM, Javascript, XML, and C++",
-                                  "Focus on creating a flexible and extensible system",
-  ])
-  experiences << Experience.new('Spectrum Health', 'Sep - Dec 2012', 'Medication Shortages Dashboard',
-                                {},
-  [ 'Creation of an "issue tracker" for medication shortages',
-    'Contract work for a local company through the MSU CSE capstone course',
-  ])
-  experiences << Experience.new('MSU', 'Sep 2011 - May 2012', 'Digital Evolution Research',
-                                {},
-                                [ 'NSF-funded research on the evolution of group formation in predator-prey systems',
-                                  'Use of evolutionary computation to shape the behaviors of digital organisms',
-                                  'Responsible for implementing predator behavior in C++',
-                                  'Use of the git version control system and unit testing',
-  ])
-  experiences << Experience.new('MSU', 'Sep - Dec 2011', 'Teaching Assistant: Introduction to Programming',
-                                {},
-                                [ 'Aided a professor by leading lab sections and grading programming projects in Python',
-                                  'Hosted weekly help room sessions to work with and teach students individually',
-  ])
-  experiences << Experience.new('MSU', 'Sep 2010 - May 2011', 'ICT Network Research',
-                                {},
-                                [ 'NSF-funded team research on the effects of regulation of ICT networks',
-                                  'Used Learning Classifier Systems to evolve a realistic simulation of an ICT network',
-                                  'Responsible for creating data visualization interfaces in Java',
-                                  'Studied evolutionary programming and machine learning techniques'
-  ])
+experiences << Experience.new('Carbon Cash, LLC', 'Dec 2013 - Jun 2014', 'API Designer & Developer',
+
+"Carbon Cash is a Michigan-based startup that rewards students for good energy
+usage habits. I designed and implemented an API that supported iOS, Android, and
+client-side Ember web apps, and in addition handled hosting and server maintenance.
+The system was built on with Rails, and integrated with local power companies and
+university housing systems to retrieve data about students' energy usage.")
+
+
+experiences << Experience.new('Bitlab, MSU', 'Oct 2012 - Mar 2014', 'Web Developer & Research Assistant',
+
+"Led by Rick Wash, the BitLab at MSU is studying economic trends of crowdfunding
+sites. As part of the project, the team has built a crowdfunding site for use by
+MSU students that collects valuable data about how people interact in a
+crowdfunding marketplace. As the sole developer working on an existing code base,
+I was responsible for redesigning the site, setting up automated testing, running
+usability studies, and integrating the site with Amazon Payments.")
+
+
+experiences << Experience.new('Eurucamp 2014', 'Aug 2014', 'Conference Talk: Service-Oriented Architecture',
+## community
+
+"Based on a client project, I created and delivered a live-coded presentation to
+introduce people to Service-Oriented Architecture. Designed to help developers
+break their first service out of a monolithic application, the talk covered
+inter-process messaging protocols, alternative data stores, and lightweight web
+frameworks")
+
+
+experiences << Experience.new('ACM at MSU', 'Mar 2011 - May 2014', 'Vice President and Webmaster',
+## community
+
+"ACM is an international organization that provides resources to students in
+Computer Science and related fields. As a founding member of the MSU chapter, I
+helped to organize student events including technology talks and seminars with
+local tech companies, programming contests, and hackathons. I also gave several
+presentations about programming and the field of computer science in general.")
+
+
+experiences << Experience.new('Spectrum Health', 'Sep - Dec 2012', 'Medication Shortages Dashboard',
+
+"Through the senior design program in MSU's computer science department, I worked
+with doctors and pharmacists at Spectrum Health to create an \"issue tracker\" for
+medication shortages. The web-based tool pulled shortage reports from the FDA and
+provided an interface for doctors to discuss the shortages and plan courses of
+action for mitigating the effects of the shortages.")
+
+
+experiences << Experience.new('Microsoft', 'May - July 2012', 'Software Engineering Intern',
+
+"During my three-month internship at Microsoft, I was responsible for developing
+a testing framework for third-party printer drivers in Windows 8. I worked with
+team members in the Sustainability Engineering department to create a tool that
+simplified the verification process for new printer driver submissions.")
+
+
+experiences << Experience.new('BEACON Lab, MSU', 'Sep 2011 - May 2012', 'Digital Evolution Research',
+## research
+
+"The BEACON Lab, based at MSU, studies evolution in a novel way – by observing
+evolving computer programs. As a research assistant, I was responsible for
+implementing predator behavior – the ability for programs to feed off of one another.
+Working closely with a postdoctoral advisor, I implemented and tested the
+behavior in C++. The predator-prey features provided the basis for several future
+publications.")
+
+
+experiences << Experience.new('MSU', 'Sep - Dec 2011', 'Teaching Assistant: Introduction to Programming',
+
+"As a teaching assistant for the introductory programming course at MSU, I led
+lab sections and help room hours. Through grading program submissions and helping
+students one-on-one, I spent many hours critiquing programming style.")
+
+
+experiences << Experience.new('Department of Media & Information, MSU', 'Sep 2010 - May 2011', 'ICT Network Research',
+## research
+
+"In my first research position, I helped a team trying to understand the effects
+of governmental regulation of ICT networks. Working with a large base of
+simulation software, I contributed by creating visualization interfaces for the
+simulation data.")
 %>
 <% experiences.each do |experience| %>
   <%= erb :experience, locals: {experience: experience} %>

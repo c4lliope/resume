@@ -29,6 +29,7 @@ p {
 ul {
   list-style: none;
   padding-left: 0px;
+  margin: 0px;
 }
 
 #header {
@@ -74,6 +75,7 @@ ul {
     }
 
     .card {
+      padding: $gutter;
       position: relative;
       margin-bottom: $gutter;
       @include span-columns(9 of 9);
@@ -85,36 +87,27 @@ ul {
 
       .position {
         @include fill-parent;
-        border-bottom: 1px solid #CCC;
         overflow: hidden;
 
         font-family: $header-font-stack;
-        .location, .title {
-          padding-top: $gutter/2;
-          padding-bottom: $gutter/4;
-        }
-        .location {
-          padding-left: $gutter;
-          background-color: #AAA;
-          @include span-columns(3 of 9);
+
+
+        .title, .location {
+          line-height: 1em;
           font-weight: bold;
         }
-        .title {
-          padding-left: 0px;
-          @include span-columns(6 of 9);
+
+        .location {
+          padding-left: $gutter;
+          opacity: 0.3;
         }
       }
 
-      .skills {
-        @include span-columns(3 of 9);
-        padding-left: $gutter;
-        i {
-          padding-right: $gutter/2;
-        }
-      }
-      .bullets {
-        @include span-columns(6 of 9);
-        @include omega;
+      .description {
+        display: block;
+        @include fill-parent;
+        margin-bottom: 0px;
+        padding-top: $gutter/2;
       }
     }
 
