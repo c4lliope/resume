@@ -13,34 +13,19 @@
 
       <%= erb :contact %>
 
-      <div id="experiences">
-        <% @data['experiences'].each do |experience| %>
-          <%= erb :experience, locals: {experience: experience} %>
-        <%end%>
-      </div>
+      <div class="main">
+        <div id="experiences">
+          <% @data['experiences'].each do |experience| %>
+            <%= erb :experience, locals: {experience: experience} %>
+          <%end%>
+        </div>
 
-      <div id="sidebar">
-        <%= erb :skills %>
-        <%= erb :education %>
-        <!--
-        <h2>Possible Icons</h2>
-        <i class="fa fa-code fa-lg"></i>
-        <i class="fa fa-exchange fa-lg"></i>
-        <i class="fa fa-key fa-lg"></i>
-        <i class="fa fa-wrench fa-lg"></i>
-        <i class="fa fa-html5 fa-lg"></i>
-        <i class="fa fa-terminal fa-lg"></i>
-        <i class="fa fa-jsfiddle fa-lg"></i>
-        <i class="fa fa-tint fa-lg"></i>
-        <i class="fa fa-adjust fa-lg"></i>
-        <i class="fa fa-pencil fa-lg"></i>
-        <i class="fa fa-css3 fa-lg"></i>
-        <i class="fa fa-users fa-lg"></i>
-        <i class="fa fa-credit-card fa-lg"></i>
-        <i class="fa fa-cloud fa-lg"></i>
-        <i class="fa fa-flash fa-lg"></i>
-        <i class="fa fa-tachometer fa-lg"></i>
-        -->
+        <div id="sidebar">
+          <%= erb :skills %>
+          <%= erb :education %>
+
+          <%= erb :action %>
+        </div>
       </div>
     </div>
   </div>

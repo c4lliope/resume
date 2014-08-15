@@ -128,7 +128,20 @@ ul {
   }
 }
 
+.main {
+  @include fill-parent;
+  overflow: hidden;
+  position: relative;
+}
+
 #sidebar {
+  position: absolute;
+  overflow: auto;
+  height: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
   @include span-columns(3 of 12);
   h2 { text-align: center; }
 
