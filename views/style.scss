@@ -73,20 +73,20 @@ ul {
   border-bottom: $border;
   overflow: hidden;
 
-  a:hover {
-    i, span {
-      transition-duration: 0.35s;
-      color: darken($green, 10);
-    }
-  }
-  div {
+  a {
     display: block;
+    @include span-columns(3 of 12);
+    text-align: center;
     i, span {
       display: block;
       @include fill-parent;
     }
-    @include span-columns(3 of 12);
-    text-align: center;
+    &:hover {
+      i, span {
+        transition-duration: 0.35s;
+        color: darken($green, 10);
+      }
+    }
   }
 }
 
