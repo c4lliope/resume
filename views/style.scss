@@ -2,18 +2,23 @@
 @import 'neat/neat';
 
 /* TODO: flesh out these variables */
-/* TODO: Choose better colors for ribbons & skills & fonts & card backs & borders*/
+/* TODO: Choose better colors for skills */
 
 $body-font-stack: 'Museo Sans';
 $header-font-stack: 'Adelle';
 
-$white: rgb(248, 248, 248);
+$white: #F8F8F8;
 $blue: #266D6A;
 $red: #803A2D;
 $green: #60C764;
 $black: #080817;
 
 $base-background-color: $white;
+$border-color: #CCC;
+$border: 1px solid $border-color;
+$card-background-color: #FFFFFF;
+
+$secondary-opacity-level: 0.3;
 
 body {
   color: $black;
@@ -30,9 +35,7 @@ h1, h2, h3, h4 {
 a {
   text-decoration: none;
   color: $black;
-  &:visited {
-    color: $black;
-  }
+  &:visited { color: $black; }
 }
 
 #content {
@@ -69,8 +72,8 @@ ul {
   margin-top: $gutter;
   margin-bottom: $gutter;
   padding: $gutter/2 0;
-  border-top: 1px solid #CCC;
-  border-bottom: 1px solid #CCC;
+  border-top: $border;
+  border-bottom: $border;
   overflow: hidden;
 
   a:hover {
@@ -99,7 +102,7 @@ ul {
     .dates {
       padding-left: $gutter;
       font-weight: 700;
-      opacity: 0.3;
+      opacity: $secondary-opacity-level;
     }
 
     .card {
@@ -108,8 +111,8 @@ ul {
       margin-bottom: $gutter;
       @include span-columns(9 of 9);
       @include omega;
-      background-color: white;
-      border: 1px solid #CCC;
+      background-color: $card-background-color;
+      border: $border;
       border-radius: 2px;
       box-shadow: 0 2px 4px darken($base-background-color, 10);
 
@@ -127,7 +130,7 @@ ul {
 
         .location {
           padding-left: $gutter;
-          opacity: 0.3;
+          opacity: $secondary-opacity-level;
         }
       }
 
@@ -194,7 +197,7 @@ ul {
         @include span-columns(6 of 8);
       }
       &.degree, &.school { font-weight: 700; }
-      &.school { border-bottom: 1px solid black; }
+      &.school { border-bottom: $border; }
     }
   }
 
