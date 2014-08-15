@@ -2,12 +2,21 @@
 @import 'neat/neat';
 
 /* TODO: flesh out these variables */
+/* TODO: Choose better colors for ribbons & skills & fonts & card backs & borders*/
+
 $body-font-stack: 'Museo Sans';
 $header-font-stack: 'Adelle';
 
-$base-background-color: rgb(245, 245, 240); // From https://upcase.com
+$white: rgb(248, 248, 248);
+$blue: #266D6A;
+$red: #803A2D;
+$green: #60C764;
+$black: #080817;
+
+$base-background-color: $white;
 
 body {
+  color: $black;
   font-family: $body-font-stack;
   background-color: $base-background-color;
   line-height: $gutter;
@@ -160,12 +169,38 @@ ul {
       &.school { border-bottom: 1px solid black; }
     }
   }
+
+  .action {
+    @include fill-parent;
+    position: absolute;
+    margin-bottom: $gutter;
+    bottom: 0;
+    h2 {
+      text-align: left;
+    }
+    .button {
+      font-size: 1.2em;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      @include fill-parent;
+      padding: $gutter/1.2;
+      text-transform: uppercase;
+      background-color: $green;
+      border-radius: 5.25px;
+      color: $white;
+      transition-duration: 0.35s;
+      letter-spacing: 1px;
+      &:hover {
+        background-color: darken($green, 10);
+      }
+    }
+  }
 }
 
 $base-accent-color: blue;
 .ribbon-wrapper {
   $ribbon-size: 85px;
-  $ribbon-background: $base-accent-color;
   @include size($ribbon-size);
   overflow: hidden;
   position: absolute;
@@ -182,12 +217,10 @@ $base-accent-color: blue;
     left: -5px;
     top: 15px;
     width: 120px;
-    background-color: $ribbon-background;
     color: white;
     box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
 
-    &.research {
-      background-color: red;
-    }
+    &.community { background-color: $blue; }
+    &.research { background-color: $red; }
   }
 }
