@@ -27,6 +27,14 @@ h1, h2, h3, h4 {
   font-family: $header-font-stack;
 }
 
+a {
+  text-decoration: none;
+  color: $black;
+  &:visited {
+    color: $black;
+  }
+}
+
 #content {
   @include outer-container;
 }
@@ -64,6 +72,13 @@ ul {
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
   overflow: hidden;
+
+  a:hover {
+    i, span {
+      transition-duration: 0.35s;
+      color: darken($green, 10);
+    }
+  }
   div {
     display: block;
     i, span {
