@@ -1,9 +1,8 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
-/* TODO: flesh out these variables */
-$body-font-stack: 'Museo Sans';
-$header-font-stack: 'Adelle';
+$body-font-stack: 'Museo Sans',sans-serif;
+$header-font-stack: 'Adelle',serif;
 
 $white: #F8F8F8;
 $blue: #266D6A;
