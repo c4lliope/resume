@@ -74,39 +74,49 @@
       "gpa": 3.97,
       "tags": "degree"
     },
+    { "name": "Computer Security",
+      "tags": "class",
+      "gpa": "4.0"
+    },
+    { "name": "Networks",
+      "tags": "class",
+      "gpa": "4.0"
+    },
+    { "name": "Databases",
+      "tags": "class",
+      "gpa": "4.0"
+    },
+    { "name": "Algorithms",
+      "tags": "class",
+      "gpa": "4.0"
+    },
+    { "name": "Software Engineering",
+      "tags": "class",
+      "gpa": "4.0"
+    },
+    { "name": "Artificial Intelligence",
+      "tags": "class",
+      "gpa": "3.5"
+    },
+    { "name": "Compilers",
+      "tags": "class",
+      "gpa": "4.0"
+    },
+    { "name": "Media Processing",
+      "tags": "class",
+      "gpa": "4.0"
+    },
+    { "name": "Computer Graphics",
+      "tags": "class",
+      "gpa": "4.0"
+    },
+    { "name": "Operating Systems",
+      "tags": "class",
+      "gpa": "4.0"
+    },
     { "name": "Chinese, Minor",
       "gpa": 3.75,
       "tags": "degree"
-    },
-    { "name": "Computer Security",
-      "gpa": 4.0
-    },
-    { "name": "Networks",
-      "gpa": 4.0
-    },
-    { "name": "Databases",
-      "gpa": 4.0
-    },
-    { "name": "Algorithms",
-      "gpa": 4.0
-    },
-    { "name": "Software Engineering",
-      "gpa": 4.0
-    },
-    { "name": "Artificial Intelligence",
-      "gpa": 3.5
-    },
-    { "name": "Compilers",
-      "gpa": 4.0
-    },
-    { "name": "Media Processing",
-      "gpa": 4.0
-    },
-    { "name": "Computer Graphics",
-      "gpa": 4.0
-    },
-    { "name": "Operating Systems",
-      "gpa": 4.0
     }
   ],
     "skills": [
