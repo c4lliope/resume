@@ -1,6 +1,10 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
+$medium: new-breakpoint(max-width 1160px 12);
+$smaller: new-breakpoint(max-width 768px 12);
+$tiny: new-breakpoint(max-width 479px 4);
+
 $body-font-stack: 'Museo Sans',sans-serif;
 $header-font-stack: 'Adelle',serif;
 
@@ -36,6 +40,10 @@ a {
 }
 
 #content {
+  @include media($medium) {
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
   @include outer-container;
 }
 
@@ -87,10 +95,32 @@ ul {
         color: darken($green, 10);
       }
     }
+    @include media($smaller) {
+      @include span-columns(6 of 12);
+      &:nth-child(1), &:nth-child(2) {
+        margin-bottom: $gutter;
+      }
+      &:nth-child(2n) {
+        @include omega;
+      }
+    }
+    @include media($tiny) {
+      @include fill-parent;
+      margin-bottom: $gutter;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+      i {
+        padding-top: .2em;
+        @include span-columns(.5 of 4);
+      }
+      span {
+        @include span-columns(3.5 of 4);
+        text-align: left;
+      }
+    }
   }
 }
-
-/*------ Timeline --------*/
 
 #experiences {
   @include span-columns(9);
