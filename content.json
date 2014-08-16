@@ -50,7 +50,7 @@
     "description": "The BEACON Lab uses novel techniques to study evolution, including the creation and observation of <strong>evolving computer programs</strong>. As a research assistant, I was responsible for <strong>implementing predator behavior</strong>, the ability for programs to feed off of one another.  Working closely with a postdoctoral advisor, I <strong>implemented and tested</strong> the behavior in <strong>C++</strong>. The predator-prey features <strong>provided a basis for several future publications</strong>."
   },
   {
-    "location": "Computer Science Department, MSU",
+    "location": "CSE Department, MSU",
     "dates": "Sep – Dec 2011",
     "title": "Teaching Assistant: Introduction to Programming",
     "category": "Community",

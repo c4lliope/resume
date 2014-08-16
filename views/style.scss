@@ -2,7 +2,7 @@
 @import 'neat/neat';
 
 $medium: new-breakpoint(max-width 1160px 12);
-$smaller: new-breakpoint(max-width 768px 12);
+$smaller: new-breakpoint(max-width 799px 4);
 $tiny: new-breakpoint(max-width 479px 4);
 
 $body-font-stack: 'Museo Sans',sans-serif;
@@ -31,6 +31,7 @@ body {
 
 h1, h2, h3, h4 {
   font-family: $header-font-stack;
+  line-height: 1.2em;
 }
 
 a {
@@ -44,6 +45,10 @@ a {
     padding-left: $gutter;
     padding-right: $gutter;
   }
+  @include media($tiny) {
+    font-size: 12px;
+  }
+  line-height: $gutter;
   @include outer-container;
 }
 
@@ -62,13 +67,10 @@ ul {
   img#profile {
     @include span-columns(3 of 12);
   }
-  .letter {
-    h1 {
-      margin-top: 0;
-      line-height: 32px;
+  h1 {
+    @include media($tiny) {
+      display: inline-block;
     }
-    @include span-columns(9 of 12);
-    @include omega;
   }
   @include clearfix;
 }
@@ -96,7 +98,7 @@ ul {
       }
     }
     @include media($smaller) {
-      @include span-columns(6 of 12);
+      @include span-columns(2 of 4);
       &:nth-child(1), &:nth-child(2) {
         margin-bottom: $gutter;
       }
@@ -124,6 +126,9 @@ ul {
 
 #experiences {
   @include span-columns(9);
+  @include media($smaller) {
+    @include span-columns(4);
+  }
   .experience {
     @include fill-parent;
     .dates {
@@ -149,15 +154,22 @@ ul {
 
         font-family: $header-font-stack;
 
-
         .title, .location {
           line-height: 1em;
           font-weight: bold;
+          @include media($smaller) {
+            @include span-columns(4 of 4);
+          }
         }
 
         .location {
           padding-left: $gutter;
           opacity: $secondary-opacity-level;
+          @include media($smaller) {
+            @include span-columns(9 of 9);
+            padding-left: 0;
+            line-height: $gutter;
+          }
         }
       }
 
@@ -189,6 +201,23 @@ ul {
   height: 100%;
   @include span-columns(3 of 12);
   h2 { text-align: center; }
+
+  @include media($smaller) {
+    position: relative;
+    overflow: hidden;
+    @include span-columns(4);
+    height: auto;
+    #skills, #education {
+      @include span-columns(2 of 4);
+    }
+    #education {
+      @include omega;
+    }
+  }
+
+  @include media($tiny) {
+    #skills, #education { @include fill-parent; }
+  }
 
   #skills {
     .skill {
@@ -236,8 +265,11 @@ ul {
     position: absolute;
     margin-bottom: $gutter;
     bottom: 0;
-    h2 {
-      text-align: left;
+    @include media($smaller) {
+      text-align: center;
+      position: relative;
+      margin-top: $gutter;
+      overflow: hidden;
     }
     .button {
       font-size: 1.2em;
