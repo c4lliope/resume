@@ -2,7 +2,7 @@
   "experiences": [
   {
     "location": "Carbon Cash, LLC",
-      "dates": "Dec 2013 – Jun 2014",
+      "dates": "Dec 2013 - Jun 2014",
       "title": "API Designer & Developer",
 
       "description": "Carbon Cash is a Michigan-based startup that rewards students for good energy usage habits. I designed and implemented an <strong>API that supported iOS, Android, and client-side Ember web apps</strong> and handled <strong>hosting and server maintenance</strong>.  The system was built on <strong>Rails</strong>, and <strong>integrated with local power companies and university housing systems</strong> to retrieve data about students' energy usage."
@@ -16,49 +16,49 @@
   },
   {
     "location": "BitLab, MSU",
-    "dates": "Oct 2012 – Mar 2014",
+    "dates": "Oct 2012 - Mar 2014",
     "title": "Web Developer & Research Assistant",
 
     "description": "Led by Rick Wash, the BitLab at MSU is studying economic trends of crowdfunding sites. As part of the project, the team has built a crowdfunding site for use by MSU students that <strong>collects data about how people use crowdfunding systems</strong>. As the sole developer working on an existing code base, I was responsible for <strong>redesigning the site</strong>, setting up <strong>automated testing</strong>, running <strong>usability studies</strong>, and <strong>integrating the site with Amazon Payments</strong>."
   },
   {
     "location": "ACM at MSU",
-    "dates": "Mar 2011 – May 2014",
+    "dates": "Mar 2011 - May 2014",
     "title": "Vice President and Webmaster",
     "category": "Community",
     "description": "ACM is an international organization that provides resources to students in Computer Science and related fields. As a <strong>founding member</strong> of the MSU chapter, I helped organize student events including <strong>technology talks and seminars</strong> with local tech companies, <strong>programming contests, and hackathons</strong>. I also gave several <strong>presentations about programming</strong> and the field of computer science in general."
   },
   {
     "location": "Spectrum Health",
-    "dates": "Sep – Dec 2012",
+    "dates": "Sep - Dec 2012",
     "title": "Medication Shortages Dashboard",
 
     "description": "Through the senior design program at MSU's computer science department, I worked with doctors and pharmacists at Spectrum Health to create an <strong>\"issue tracker\" for medication shortages</strong>. The web application <strong>integrated data from the FDA</strong> and gave pharmacists a place to discuss and create plans to outlast the shortages."
   },
   {
     "location": "Microsoft",
-    "dates": "May – July 2012",
+    "dates": "May - July 2012",
     "title": "Software Engineering Intern",
 
     "description": "During my three-month internship at Microsoft, I was responsible for developing a <strong>testing framework</strong> for third-party printer drivers in Windows 8. I worked with team members in the Sustainability Engineering department to create a tool that <strong>simplified the verification process</strong> for new printer driver submissions."
   },
   {
     "location": "BEACON Lab, MSU",
-    "dates": "Sep 2011 – May 2012",
+    "dates": "Sep 2011 - May 2012",
     "title": "Digital Evolution Research",
     "category": "Research",
     "description": "The BEACON Lab uses novel techniques to study evolution, including the creation and observation of <strong>evolving computer programs</strong>. As a research assistant, I was responsible for <strong>implementing predator behavior</strong>, the ability for programs to feed off of one another.  Working closely with a postdoctoral advisor, I <strong>implemented and tested</strong> the behavior in <strong>C++</strong>. The predator-prey features <strong>provided a basis for several future publications</strong>."
   },
   {
     "location": "CSE Department, MSU",
-    "dates": "Sep – Dec 2011",
+    "dates": "Sep - Dec 2011",
     "title": "Teaching Assistant: Introduction to Programming",
     "category": "Community",
     "description": "As a teaching assistant for the introductory programming course at MSU, I <strong>led lab sections and held help room hours</strong>. Through grading program submissions and <strong>helping students one-on-one</strong>, I spent many hours teaching <strong>programming concepts, techniques, and best practices</strong>."
   },
   {
     "location": "Department of Media & Information, MSU",
-    "dates": "Sep 2010 – May 2011",
+    "dates": "Sep 2010 - May 2011",
     "title": "ICT Network Research",
     "category": "Research",
 

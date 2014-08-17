@@ -1,5 +1,5 @@
 <div class="experience">
-  <span class="dates"><%= experience['dates'] %></span>
+  <span class="dates"><%= experience['dates'].gsub('-', '&ndash;') %></span>
   <div class="card">
     <% if experience['category'] %>
       <div class="ribbon-wrapper">
