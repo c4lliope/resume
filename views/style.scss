@@ -235,6 +235,12 @@ ul {
         }
       }
     }
+    .about-link {
+      opacity: $secondary-opacity-level;
+      @include span-columns(3 of 3);
+      text-align: center;
+    }
+    overflow: hidden;
     margin-bottom: 2 * $gutter;
   }
   #education {
