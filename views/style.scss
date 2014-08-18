@@ -38,6 +38,10 @@ a {
   text-decoration: none;
   color: $black;
   &:visited { color: $black; }
+  &:hover {
+    transition-duration: 0.35s;
+    color: darken($green, 10);
+  }
 }
 
 #content {
@@ -90,12 +94,6 @@ ul {
     i, span {
       display: block;
       @include fill-parent;
-    }
-    &:hover {
-      i, span {
-        transition-duration: 0.35s;
-        color: darken($green, 10);
-      }
     }
     @include media($smaller) {
       @include span-columns(2 of 4);
@@ -316,4 +314,14 @@ $base-accent-color: blue;
     &.community { background-color: $blue; }
     &.research { background-color: $red; }
   }
+}
+
+#footer {
+  margin-top: $gutter;
+  border-top: $border;
+  padding-top: $gutter/2;
+  padding-bottom: $gutter/2;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
 }
