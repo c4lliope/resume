@@ -1,38 +1,20 @@
-<html>
-  <head>
-    <title>Resum&eacute; | Grayson Wright</title>
+<div id="header">
+  <%= erb :letter %>
+</div>
 
-    <link rel="stylesheet" type="text/css" href="/normalize.css"></link>
-    <link rel="stylesheet" type="text/css" href="/style.css"></link>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<%= erb :contact %>
 
-    <script type="text/javascript" src="//use.typekit.net/qmo7wci.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  </head>
-
-  <body>
-    <div id="content">
-      <div id="header">
-        <%= erb :letter %>
-      </div>
-
-      <%= erb :contact %>
-
-      <div class="main">
-        <div id="experiences">
-          <% @data['experiences'].each do |experience| %>
-            <%= erb :experience, locals: {experience: experience} %>
-          <%end%>
-        </div>
-
-        <div id="sidebar">
-          <%= erb :skills %>
-          <%= erb :education %>
-
-          <%= erb :action %>
-        </div>
-      </div>
-    </div>
+<div class="main">
+  <div id="experiences">
+    <% @data['experiences'].each do |experience| %>
+      <%= erb :experience, locals: {experience: experience} %>
+    <%end%>
   </div>
-</body>
-</html>
+
+  <div id="sidebar">
+    <%= erb :skills %>
+    <%= erb :education %>
+
+    <%= erb :action %>
+  </div>
+</div>
