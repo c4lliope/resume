@@ -7,6 +7,10 @@ get '/' do
   erb :index
 end
 
+get '/about' do
+  erb :about
+end
+
 get '/style.css' do
   scss :style
 end

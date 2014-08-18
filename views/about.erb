@@ -1,0 +1,29 @@
+<div id="about-icons">
+  <h1>Icon Attributions</h1>
+
+  <p>
+  The following icons are taken from
+  <a href="http://www.thenounproject.com">Noun Project</a>.
+  Many thanks to the creators!
+  </p>
+  <% {
+    'flowchart' => ['Icons8', 'Icons8'],
+    'html' => ['WebPlatform', 'WebPlatform.org'],
+    'design' => ['DHETTEIX', 'Dan Hetteix'],
+    'plus' => ['somerandomdude', 'P.J. Onori'],
+    'ruby' => ['RomainTourneret', 'Romain Tourneret'],
+    'script' => ['useiconic.com', 'useiconic.com'],
+    'terminal' => ['danielgamage', 'Daniel Gamage'],
+    'testing' => ['johncaserta', 'John Caserta'],
+  }.each do |icon, attribution| %>
+    <div class="icon-attribution">
+      <img src="/<%=icon%>.svg" alt="<%=icon%>"></img>
+      <span>
+        Designed by
+        <a href="http://www.thenounproject.com/<%=attribution[0]%>">
+          <%=attribution[1]%>
+        </a>
+      </span>
+    </div>
+  <% end %>
+</div>

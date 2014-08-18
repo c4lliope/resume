@@ -325,3 +325,23 @@ $base-accent-color: blue;
   text-align: center;
   text-transform: uppercase;
 }
+
+#about-icons {
+  a { font-weight: bold; }
+  h1, p { text-align: center; }
+  p { margin-bottom: 2*$gutter; }
+  .icon-attribution {
+    @include span-columns(6 of 12);
+    &:nth-child(2n) {
+      @include omega;
+    }
+    margin-bottom: $gutter;
+    span {
+      display: inline-block;
+      padding-top: 1.5em;
+    }
+    img {
+      @include span-columns(1 of 6);
+    }
+  }
+}
