@@ -74,6 +74,7 @@ ul {
 }
 
 .contact {
+  h2 { display: none; }
   margin-top: $gutter;
   margin-bottom: $gutter;
   padding: $gutter/2 0;
