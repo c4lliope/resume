@@ -1,0 +1,61 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'colors';
+
+body {
+  font-size: 8px;
+  background: white;
+}
+
+#header #profile {
+}
+
+#content {
+  max-width: 95%;
+}
+
+#experiences .experience {
+  overflow: hidden;
+  .dates {
+    padding-left: 0px;
+  }
+  .card {
+    margin-bottom: 0;
+    position: relative;
+    height: auto;
+    .ribbon-wrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+      .ribbon {
+        font-weight: bold;
+        &.community { color: $blue; }
+        &.research { color: $red; }
+      }
+      margin-bottom: $gutter;
+      @include clearfix;
+    }
+    .position {
+      border-bottom: 1px solid $border-color;
+    }
+    .description {
+      padding-top: 0;
+    }
+    padding: 0px;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+#sidebar #skills .about-link {
+  display: none;
+}
+
+#sidebar .action {
+  p {
+    margin-bottom: 0;
+  }
+  .button {
+    display: none;
+  }
+}

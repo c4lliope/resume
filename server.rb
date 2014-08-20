@@ -14,3 +14,7 @@ end
 get '/style.css' do
   scss :style
 end
+
+get '/print.css' do
+  scss :print
+end
