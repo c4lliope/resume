@@ -1,5 +1,6 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
+@import 'colors';
 
 $medium: new-breakpoint(max-width 1160px 12);
 $smaller: new-breakpoint(max-width 799px 4);
@@ -8,14 +9,7 @@ $tiny: new-breakpoint(max-width 479px 4);
 $body-font-stack: 'Museo Sans',sans-serif;
 $header-font-stack: 'Adelle',serif;
 
-$white: #F8F8F8;
-$blue: #266D6A;
-$red: #803A2D;
-$green: #60C764;
-$black: #080817;
-
 $base-background-color: $white;
-$border-color: #CCC;
 $border: 1px solid $border-color;
 $card-background-color: #FFFFFF;
 
