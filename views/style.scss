@@ -92,7 +92,7 @@ ul {
     }
     @include media($smaller) {
       @include span-columns(2 of 4);
-      &:nth-child(1), &:nth-child(2) {
+      &:nth-child(2), &:nth-child(3) {
         margin-bottom: $gutter;
       }
       &:nth-child(2n) {
