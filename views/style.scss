@@ -93,19 +93,13 @@ ul {
     }
     @include media($smaller) {
       @include span-columns(2 of 4);
-      &:nth-child(2), &:nth-child(3) {
-        margin-bottom: $gutter;
-      }
-      &:nth-child(2n) {
-        @include omega;
-      }
+      &:nth-child(1), &:nth-child(2) { margin-bottom: $gutter; }
+      &:nth-child(2n) { @include omega; }
     }
     @include media($tiny) {
       @include fill-parent;
       margin-bottom: $gutter;
-      &:last-child {
-        margin-bottom: 0px;
-      }
+      &:last-child { margin-bottom: 0px; }
       i {
         padding-top: .2em;
         @include span-columns(.5 of 4);

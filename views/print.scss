@@ -24,7 +24,7 @@ body {
 }
 
 .contact {
-  h2 { margin-top: $gutter; }
+  margin-top: $gutter*2.5;
   @include span-columns(3 of 12);
   @include omega;
   border: none;
