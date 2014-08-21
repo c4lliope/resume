@@ -4,42 +4,37 @@
 
 $border-color: #EEE;
 
+.printonly { display: block; }
+
+h2 { margin-top: 0; }
+p { text-align: justify; }
+
 body {
   font-size: 8px;
   background: white;
 }
 
-#content {
-  max-width: 95%;
-}
+#content { max-width: 95%; }
 
 #header {
   @include span-columns(9 of 12);
-  h1 {
-  }
   #profile { @include span-columns(1 of 12); }
-  p {
-    margin-bottom: $gutter/2;
-  }
+  p { margin-bottom: $gutter/2; }
   margin-bottom: $gutter;
 }
 
 .contact {
+  h2 { margin-top: $gutter; }
   @include span-columns(3 of 12);
   @include omega;
   border: none;
-    text-align: center;
-  h2 {
-    display: inline-block;
-  }
+  text-align: center;
   .channel {
     @include fill-parent;
     @include span-columns(3 of 3);
     @include omega;
     margin-bottom: $gutter;
-    &:last-child {
-      margin-bottom: 0px;
-    }
+    &:last-child { margin-bottom: 0px; }
     i {
       padding-top: .2em;
       @include span-columns(.5 of 3);
@@ -55,16 +50,12 @@ body {
 }
 
 #sidebar {
-  #skills {
-    margin-bottom: $gutter * 4.3;
-  }
+  #skills { margin-bottom: $gutter * 3; }
 }
 
 #experiences .experience {
   overflow: hidden;
-  .dates {
-    padding-left: 0px;
-  }
+  .dates { padding-left: 0px; }
   .card {
     margin-bottom: 0;
     position: relative;
@@ -81,27 +72,17 @@ body {
       margin-bottom: $gutter;
       @include clearfix;
     }
-    .position {
-      border-bottom: 1px solid $border-color;
-    }
-    .description {
-      padding-top: 0;
-    }
+    .description { padding-top: 0; }
+    p { padding-top: $gutter/4; }
     padding: 0px;
     border: none;
     box-shadow: none;
   }
 }
 
-#sidebar #skills .about-link {
-  display: none;
-}
+#sidebar #skills .about-link { display: none; }
 
 #sidebar .action {
-  p {
-    margin-bottom: 0;
-  }
-  .button {
-    display: none;
-  }
+  p { margin-bottom: 0; }
+  .button { display: none; }
 }

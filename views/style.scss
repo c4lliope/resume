@@ -23,6 +23,8 @@ body {
   @include background(url("/background.png"));
 }
 
+.printonly { display: none; }
+
 h1, h2, h3, h4 {
   font-family: $header-font-stack;
   line-height: 1.2em;
@@ -74,7 +76,6 @@ ul {
 }
 
 .contact {
-  h2 { display: none; }
   margin-top: $gutter;
   margin-bottom: $gutter;
   padding: $gutter/2 0;
@@ -199,12 +200,8 @@ ul {
     overflow: hidden;
     @include span-columns(4);
     height: auto;
-    #skills, #education {
-      @include span-columns(2 of 4);
-    }
-    #education {
-      @include omega;
-    }
+    #skills, #education { @include span-columns(2 of 4); }
+    #education { @include omega; }
   }
 
   @include media($tiny) {
@@ -247,9 +244,7 @@ ul {
         @include span-columns(2 of 8);
         @include omega;
       }
-      .name {
-        @include span-columns(6 of 8);
-      }
+      .name { @include span-columns(6 of 8); }
       &.school { border-bottom: $border; }
       &.class {
         padding-left: $gutter;
@@ -282,9 +277,7 @@ ul {
       color: $white;
       transition-duration: 0.35s;
       letter-spacing: 1px;
-      &:hover {
-        background-color: darken($green, 10);
-      }
+      &:hover { background-color: darken($green, 10); }
     }
   }
 }
@@ -318,13 +311,7 @@ ul {
 }
 
 #footer {
-  margin-top: $gutter;
-  border-top: $border;
-  padding-top: $gutter/2;
-  padding-bottom: $gutter/2;
-  overflow: hidden;
   text-align: center;
-  text-transform: uppercase;
 }
 
 #about-icons {
@@ -333,16 +320,12 @@ ul {
   p { margin-bottom: 2*$gutter; }
   .icon-attribution {
     @include span-columns(6 of 12);
-    &:nth-child(2n) {
-      @include omega;
-    }
+    &:nth-child(2n) { @include omega; }
     margin-bottom: $gutter;
     span {
       display: inline-block;
       padding-top: 1.5em;
     }
-    img {
-      @include span-columns(1 of 6);
-    }
+    img { @include span-columns(1 of 6); }
   }
 }
