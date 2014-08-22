@@ -12,21 +12,21 @@
     "dates": "Aug 2014",
     "title": "Conference Talk: Service-Oriented Architecture",
     "category": "Community",
-    "description": "Based on a client project I created and delivered a live-coded presentation to introduce people to **Service-Oriented Architecture**. Designed to help developers break their first service out of a monolithic application, the talk covered **inter-process messaging protocols, alternative data stores, and lightweight web frameworks**"
+    "description": "In front of an audience of several hundred Rubyists, I created and delivered a live-coded introduction to **Service-Oriented Architectures**. Designed to help developers break their first service out of a monolithic application, the talk covered **inter-process messaging protocols, alternative data stores, and lightweight web frameworks**"
   },
   {
     "location": "BitLab, MSU",
     "dates": "Oct 2012 - Mar 2014",
     "title": "Web Developer & Research Assistant",
 
-    "description": "Led by Rick Wash, the BitLab at MSU is studying economic trends of crowdfunding sites. As part of the project the team has built a crowdfunding site for use by MSU students that collects data about how people use crowdfunding systems. As the sole developer working on an existing code base I was responsible for **redesigning the site**, setting up **automated testing**, running **usability studies**, and **integrating the site with Amazon Payments**."
+    "description": "The BitLab at MSU studies the boundaries of computer-human interaction, including the economic trends of crowdfunding sites. To collect better data the team built a crowdfunding site for MSU students that collects data about why people contribute to crowdfunded projects. As the sole developer working on an existing code base I was responsible for **redesigning the site, setting up automated testing, running usability studies, and integrating the site with Amazon Payments**."
   },
   {
     "location": "ACM at MSU",
     "dates": "Mar 2011 - May 2014",
     "title": "Vice President and Webmaster",
     "category": "Community",
-    "description": "ACM is an international organization that provides resources to students in Computer Science and related fields. As a founding member of the MSU chapter I **organized student events** including technology talks and seminars with local tech companies, programming contests, and hackathons. I also **gave presentations about programming** and the field of computer science in general."
+    "description": "The Association of Computing Machinery is an international organization that provides resources to students in Computer Science and related fields. As a founding member of the MSU chapter I **organized student events** including technology talks and seminars with local tech companies, programming contests, and hackathons. I also **gave presentations about programming** and the field of computer science."
   },
   {
     "location": "Spectrum Health",
@@ -40,14 +40,14 @@
     "dates": "May - July 2012",
     "title": "Software Engineering Intern",
 
-    "description": "During my three-month internship at Microsoft I was responsible for developing a **testing framework** for third-party printer drivers in Windows 8, using **C++ and Javascript**. I worked with team members in the Sustainability Engineering department to create a tool that simplified the verification process for new printer driver submissions."
+    "description": "During my three-month internship at Microsoft I was responsible for developing a **testing framework** for third-party printer drivers in Windows 8 using **C++ and Javascript**. I worked with team members in the Sustainability Engineering department to simplify the verification process for new printer driver submissions."
   },
   {
     "location": "BEACON Lab, MSU",
     "dates": "Sep 2011 - May 2012",
     "title": "Digital Evolution Research",
     "category": "Research",
-    "description": "The BEACON Lab uses novel techniques to study evolution, including the creation and observation of **evolving computer programs**. As a research assistant I was responsible for implementing predator behavior – in this case, the ability for programs to feed off of one another.  Working closely with a postdoctoral advisor I **implemented and tested the behavior in C++**. The predator-prey features provided a basis for several future publications."
+    "description": "The BEACON Lab studies evolution with using novel techniques, including the creation and observation of **evolving computer programs**. As a research assistant I was responsible for implementing the ability for programs to feed off of one another, leading to predatory behavior in a population.  Working closely with a postdoctoral advisor I **implemented and tested the behavior in C++**. The predator-prey features provided a basis for several future publications."
   },
   {
     "location": "CSE Department, MSU",
@@ -62,7 +62,7 @@
     "title": "ICT Network Research",
     "category": "Research",
 
-    "description": "In my first research position I helped a team trying to understand the effects of governmental regulation of ICT networks. Working with a large base of **simulation software in Java**, I contributed by creating **interfaces to visualize dynamic networks**."
+    "description": "I worked with a team of telecommunication experts looking to understand the intricacies of ICT network regulation. Working with a large base of **simulation software in Java**, I contributed by creating **interfaces to visualize dynamic networks**."
   }
   ],
     "education": [
