@@ -1,0 +1,10 @@
+<section id="languages">
+  <h2>(Natural) Languages</h2>
+
+  <% @data['languages'].each do |language| %>
+    <div class="language">
+      <div class="code"><%= language['code'] %></div>
+      <div class="introduction"><%= language['introduction'] %></div>
+    </div>
+  <% end %>
+</section>

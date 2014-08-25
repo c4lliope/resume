@@ -1,4 +1,14 @@
 {
+  "languages": [
+    {
+      "code": "English",
+      "introduction": "My name's Grayson"
+    },
+    {
+      "code": "Chinese",
+      "introduction": "我叫盖瑞松"
+    }
+  ],
   "experiences": [
   {
     "location": "Carbon Cash, LLC",
