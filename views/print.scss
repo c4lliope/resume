@@ -20,7 +20,7 @@ body {
   h1 { margin-top: 0; }
   @include span-columns(9 of 12);
   #profile {
-    @include span-columns(1 of 12);
+    @include span-columns(2 of 12);
     margin-bottom: $gutter/2;
   }
   p { margin-bottom: $gutter/2; }
@@ -28,7 +28,7 @@ body {
 }
 
 .contact {
-  margin-top: $gutter*1.5;
+  margin-top: $gutter*3.5;
   @include span-columns(3 of 12);
   @include omega;
   border: none;
@@ -53,8 +53,14 @@ body {
   margin-bottom: $gutter;
 }
 
+#experiences {
+  @include span-columns(9 of 12);
+  @include shift(3);
+}
 #sidebar {
-  #skills { margin-bottom: $gutter * 3; }
+  right: auto;
+  left: 0;
+  @include span-columns(3 of 12);
 }
 
 #experiences .experience {
