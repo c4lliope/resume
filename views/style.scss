@@ -23,21 +23,6 @@ body {
   @include background(url("/background.png"));
 }
 
-#languages {
-  .language {
-    @include clearfix;
-    margin-bottom: $gutter;
-    .introduction {
-      @include span-columns(2 of 3);
-    }
-    .code {
-      text-align: right;
-      @include span-columns(1 of 3);
-      font-weight: bold;
-    }
-  }
-}
-
 .printonly { display: none; }
 
 h1, h2, h3, h4 {
@@ -209,12 +194,14 @@ ul {
     overflow: hidden;
     @include span-columns(4);
     height: auto;
-    #skills, #education { @include span-columns(2 of 4); }
-    #education { @include omega; }
+    section { @include span-columns(2 of 4); }
+    section:nth-child(2n) { @include omega; }
+    #languages { @include omega; }
+    #education .class { display: none; }
   }
 
   @include media($tiny) {
-    #skills, #education { @include fill-parent; }
+    section { @include fill-parent; }
   }
 
   section {
@@ -260,6 +247,20 @@ ul {
       &.class {
         padding-left: $gutter;
         opacity: 0.5;
+      }
+    }
+  }
+  #languages {
+    .language {
+      @include clearfix;
+      margin-bottom: $gutter;
+      .introduction {
+        @include span-columns(2 of 3);
+      }
+      .code {
+        text-align: right;
+        @include span-columns(1 of 3);
+        font-weight: bold;
       }
     }
   }
