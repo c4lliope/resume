@@ -15,7 +15,7 @@
       "dates": "Dec 2013 - Jun 2014",
       "title": "API Designer & Developer",
 
-      "description": "Carbon Cash is a Michigan-based startup that rewards students for good energy usage habits. I designed and implemented an **API that supported iOS, Android, and client-side Ember web apps** and handled hosting and server maintenance.  The system was **built on Rails** and integrated with local power companies and university housing systems to retrieve data about students' energy usage."
+      "description": "Carbon Cash is a Michigan-based startup that rewards students for good energy usage habits. I designed and implemented an **API to support iOS, Android, and client-side Ember web apps**, and handled hosting and server maintenance.  The system was **built on Rails** and integrated with local power companies and university housing systems to retrieve data about students' energy usage."
   },
   {
     "location": "Eurucamp 2014",
