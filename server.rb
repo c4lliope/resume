@@ -3,7 +3,7 @@ require 'sinatra/reloader'
 require 'yaml'
 
 get '/' do
-  @data =  YAML.load_file 'content.json'
+  @data =  YAML.load_file 'content.yml'
   erb :index
 end
 
