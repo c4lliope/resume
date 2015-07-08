@@ -6,8 +6,8 @@ $medium: new-breakpoint(max-width 1160px 12);
 $smaller: new-breakpoint(max-width 799px 4);
 $tiny: new-breakpoint(max-width 479px 4);
 
-$body-font-stack: 'Museo Sans',sans-serif;
-$header-font-stack: 'Adelle',serif;
+$body-font-stack: 'Adelle',serif;
+$header-font-stack: "proxima-nova", sans-serif;
 
 $base-background-color: $white;
 $border: 1px solid $border-color;
