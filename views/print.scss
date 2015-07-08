@@ -10,15 +10,19 @@ h2 { margin-top: 0; }
 p { text-align: justify; }
 
 body {
-  font-size: 8px;
+  font-size: 9px;
   background: white;
 }
 
 #content { max-width: 95%; }
 
 #header {
-  h1 { margin-top: 0; }
-  @include span-columns(9 of 12);
+  h1 {
+    margin-top: 0;
+    white-space: nowrap;
+  }
+  overflow: visible;
+  @include span-columns(8 of 12);
   #profile {
     @include span-columns(2 of 12);
     margin-bottom: $gutter/2;
@@ -28,8 +32,8 @@ body {
 }
 
 .contact {
-  margin-top: $gutter*3.5;
-  @include span-columns(3 of 12);
+  margin-top: $gutter*5;
+  @include span-columns(4 of 12);
   @include omega;
   border: none;
   text-align: center;
@@ -53,46 +57,39 @@ body {
   margin-bottom: $gutter;
 }
 
-#experiences {
-  @include span-columns(9 of 12);
-  @include shift(3);
-}
-#sidebar {
-  right: auto;
-  left: 0;
-  @include span-columns(3 of 12);
-}
-
 #experiences .experience {
   overflow: hidden;
   .dates { padding-left: 0px; }
   .card {
+    .position {
+      text-align: right;
+      @include shift(0);
+      @include span-columns(3 of 12);
+      span {
+        margin-bottom: 0;
+      }
+    }
+
     margin-bottom: 0;
     position: relative;
     height: auto;
+
     .ribbon-wrapper {
-      position: absolute;
-      top: 0;
-      right: 0;
-      .ribbon {
-        font-weight: bold;
-        &.community { color: $blue; }
-        &.research { color: $red; }
-      }
-      margin-bottom: $gutter;
-      @include clearfix;
+      display: none;
     }
+
+    .category {
+      display: block !important;
+      &.community { color: $blue; }
+      &.research { color: $red; }
+    }
+
     .description { padding-top: 0; }
-    p { padding-top: $gutter/4; }
+    p {
+      @include span-columns(9 of 12);
+    }
     padding: 0px;
     border: none;
     box-shadow: none;
   }
-}
-
-#sidebar #skills .about-link { display: none; }
-
-#sidebar .action {
-  p { margin-bottom: 0; }
-  .button { display: none; }
 }

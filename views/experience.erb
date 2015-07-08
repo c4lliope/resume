@@ -1,5 +1,4 @@
 <div class="experience">
-  <span class="dates"><%= experience['dates'].gsub('-', '&ndash;') %></span>
   <div class="card">
     <% if experience['category'] %>
       <div class="ribbon-wrapper">
@@ -11,6 +10,7 @@
     <div class="position">
       <span class="title"><%= experience['title'] %></span>
       <span class="location"><%= experience['location'] %></span>
+      <span class="dates"><%= experience['dates'].gsub('-', '&ndash;') %></span>
     </div>
     <%= markdown experience['description'] %>
   </div>

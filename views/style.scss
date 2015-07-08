@@ -113,18 +113,12 @@ ul {
 }
 
 #experiences {
-  @include span-columns(9);
+  @include span-columns(12);
   @include media($smaller) {
     @include span-columns(4);
   }
   .experience {
     @include fill-parent;
-    .dates {
-      padding-left: $gutter;
-      font-weight: 700;
-      opacity: $secondary-opacity-level;
-    }
-
     .card {
       padding: $gutter;
       position: relative;
@@ -137,21 +131,23 @@ ul {
       box-shadow: 0 2px 4px darken($base-background-color, 10);
 
       .position {
-        @include fill-parent;
+        span {
+          display: block;
+          @include fill-parent;
+          @include clearfix;
+          margin-bottom: 0.5em;
+          font-weight: bold;
+        }
+
+        @include span-columns(3.5 of 12);
+        @include shift(0.5);
         overflow: hidden;
         font-family: $header-font-stack;
 
-        .title, .location {
-          line-height: 1em;
-          font-weight: bold;
-          @include media($smaller) {
-            @include span-columns(4 of 4);
-          }
-        }
-
-        .location {
-          padding-left: $gutter;
+        .location,
+        .dates {
           opacity: $secondary-opacity-level;
+
           @include media($smaller) {
             @include span-columns(9 of 9);
             padding-left: 0;
@@ -162,9 +158,8 @@ ul {
 
       p {
         display: block;
-        @include fill-parent;
+        @include span-columns(8 of 12);
         margin-bottom: 0px;
-        padding-top: $gutter/2;
       }
     }
 
@@ -178,122 +173,6 @@ ul {
   position: relative;
 }
 
-#sidebar {
-  position: absolute;
-  overflow: auto;
-  height: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  @include span-columns(3 of 12);
-  h2 { text-align: center; }
-
-  @include media($smaller) {
-    position: relative;
-    overflow: hidden;
-    @include span-columns(4);
-    height: auto;
-    section { @include span-columns(2 of 4); }
-    section:nth-child(2n) { @include omega; }
-    #languages { @include omega; }
-    #education .class { display: none; }
-  }
-
-  @include media($tiny) {
-    section { @include fill-parent; }
-  }
-
-  section {
-    overflow: hidden;
-    margin-bottom: 2 * $gutter;
-  }
-  #skills {
-    .skill {
-      @include clearfix;
-      margin-bottom: $gutter/2;
-      .name {
-        @include span-columns(1.5 of 3);
-        text-align: right;
-      }
-      .proficiency {
-        display: inline-block;
-        @include span-columns(1.5 of 3);
-        @include omega;
-        .skill-bubble {
-          padding-top: .2em;
-          @include span-columns(1 of 5);
-        }
-      }
-    }
-    .about-link {
-      opacity: $secondary-opacity-level;
-      @include span-columns(3 of 3);
-      text-align: center;
-    }
-  }
-  #education {
-    .topic {
-      @include clearfix;
-      @include fill-parent;
-      margin-bottom: $gutter/2;
-      .gpa {
-        text-align: right;
-        @include span-columns(2 of 8);
-        @include omega;
-      }
-      .name { @include span-columns(6 of 8); }
-      &.school { border-bottom: $border; }
-      &.class {
-        padding-left: $gutter;
-        opacity: 0.5;
-      }
-    }
-  }
-  #languages {
-    .language {
-      @include clearfix;
-      margin-bottom: $gutter;
-      .introduction {
-        @include span-columns(2 of 3);
-      }
-      .code {
-        text-align: right;
-        @include span-columns(1 of 3);
-        font-weight: bold;
-      }
-    }
-  }
-
-  .action {
-    @include fill-parent;
-    position: absolute;
-    margin-bottom: $gutter;
-    bottom: 0;
-    @include media($smaller) {
-      text-align: center;
-      position: relative;
-      margin-top: $gutter;
-      overflow: hidden;
-    }
-    .button {
-      font-size: 1.2em;
-      text-align: center;
-      text-decoration: none;
-      display: block;
-      @include fill-parent;
-      padding: $gutter/1.2;
-      text-transform: uppercase;
-      background-color: $green;
-      border-radius: 5.25px;
-      color: $white;
-      transition-duration: 0.35s;
-      letter-spacing: 1px;
-      &:hover { background-color: darken($green, 10); }
-    }
-  }
-}
-
 @media screen {
   .ribbon-wrapper {
     $ribbon-size: 85px;
@@ -301,16 +180,16 @@ ul {
     overflow: hidden;
     position: absolute;
     top: -1px;
-    right: -1px;
+    left: -1px;
 
     .ribbon {
       font-size: .8em;
       font-weight: 800;
       text-align: center;
-      @include transform(rotate(45deg));
+      @include transform(rotate(-45deg));
       position: relative;
       padding: 2px 7px;
-      left: -5px;
+      left: -30px;
       top: 15px;
       width: 120px;
       color: white;
