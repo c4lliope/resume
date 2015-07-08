@@ -1,5 +1,36 @@
 ---
 experiences:
+  - location: thoughtbot, inc
+    dates: Nov 2014 - Present
+    title: Developer
+    description: |
+      thoughtbot is one of the leading web development consulting companies
+      in the world.
+      As a developer,
+      I **work directly with clients**
+      both at startups and established companies.
+      I work with **Ruby on Rails**
+      and a variety of **front-end JavaScript frameworks**,
+      and build features including
+      **social networks,
+      payment processing,
+      automated emails,
+      third-party API integrations,
+      and data visualizations**.
+  - location: Code for San Francisco
+    dates: Jan 2015 - Present
+    title: Lead Developer, SF OpenReferral
+    category: Community
+    description: |
+      San Francisco's OpenReferral initiative
+      is working with the local Reentry Council
+      to collect, standardize, and publish
+      data about social services in the city.
+      As the lead developer,
+      I **coordinate the efforts of several volunteers**,
+      run **user interviews**,
+      and work closely with other project leads
+      to **define the direction of the project**.
   - location: Carbon Cash, LLC
     dates: Dec 2013 - Jun 2014
     title: API Designer & Developer
