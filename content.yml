@@ -1,7 +1,7 @@
 ---
 experiences:
   - location: thoughtbot, inc
-    dates: Nov 2014 - Present
+    dates: Nov 2014 - Dec 2015
     title: Developer
     description: |
       thoughtbot is a leading web and mobile application consulting company.
@@ -18,7 +18,7 @@ experiences:
       CSS/SASS,
       and a variety of **front-end JavaScript frameworks**,
   - location: Code for San Francisco
-    dates: Jan 2015 - Present
+    dates: Jan 2015 - Dec 2015
     title: Lead Developer (Volunteer), SF OpenReferral
     category: Community
     description: |
@@ -36,7 +36,7 @@ experiences:
   - location: Carbon Cash, LLC
     dates: Dec 2013 - Jun 2014
     title: API Designer & Developer
-    description:
+    description: |
       Carbon Cash is a Michigan-based startup
       that rewards students for good energy usage habits.
       I designed and implemented
@@ -49,7 +49,7 @@ experiences:
     dates: Aug 2014
     title: 'Conference Talk: Service-Oriented Architecture'
     category: Community
-    description:
+    description: |
       In front of an audience of several hundred developers,
       I created and delivered a live-coded introduction
       to **Service-Oriented Architectures**.
@@ -61,7 +61,7 @@ experiences:
   - location: BitLab, MSU
     dates: Oct 2012 - Mar 2014
     title: Web Developer & Research Assistant
-    description:
+    description: |
       The BitLab at MSU studies the boundaries of computer-human interaction,
       including the economic trends of crowdfunding sites.
       To collect better data the team built a crowdfunding site for MSU students
@@ -75,7 +75,7 @@ experiences:
     dates: Mar 2011 - May 2014
     title: Vice President and Webmaster
     category: Community
-    description:
+    description: |
       The Association of Computing Machinery is an international organization
       that provides resources
       to students in Computer Science and related fields.
@@ -89,17 +89,17 @@ experiences:
   - location: Spectrum Health
     dates: Sep - Dec 2012
     title: Medication Shortages Dashboard
-    description:
-      "Through the senior design program at MSU's computer science department
+    description: |
+      Through the senior design program at MSU's computer science department
       I worked with doctors and pharmacists at Spectrum Health
-      to create an \"issue tracker\" for medication shortages.
+      to create an "issue tracker" for medication shortages.
       The **Rails app** used **Javascript visualization libraries**
       to display data pulled from the FDA,
-      and helped pharmacists discuss and create plans to outlast shortages."
+      and helped pharmacists discuss and create plans to outlast shortages.
   - location: Microsoft
     dates: May - July 2012
     title: Software Engineering Intern
-    description:
+    description: |
       During my three-month internship at Microsoft
       I was responsible for developing a **testing framework**
       for third-party printer drivers in Windows 8
@@ -110,7 +110,7 @@ experiences:
     dates: Sep 2011 - May 2012
     title: Digital Evolution Research
     category: Research
-    description:
+    description: |
       The BEACON Lab studies evolution with using novel techniques,
       including the creation and observation of **evolving computer programs**.
       As a research assistant
@@ -125,7 +125,7 @@ experiences:
     dates: Sep - Dec 2011
     title: 'Teaching Assistant: Introduction to Programming'
     category: Community
-    description:
+    description: |
       As a teaching assistant for the introductory programming course at MSU,
       I **led lab sections and held help room hours**.
       Through grading program submissions and helping students one-on-one,
