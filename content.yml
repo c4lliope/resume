@@ -4,66 +4,130 @@ experiences:
     dates: Nov 2014 - Present
     title: Developer
     description: |
-      thoughtbot is one of the leading web development consulting companies
-      in the world.
+      thoughtbot is a leading web and mobile application consulting company.
       As a developer,
-      I **work directly with clients**
-      both at startups and established companies.
-      I work with **Ruby on Rails**
-      and a variety of **front-end JavaScript frameworks**,
-      and build features including
+      I **worked directly with clients**
+      both at startups and established companies,
+      and built features including
       **social networks,
       payment processing,
       automated emails,
       third-party API integrations,
       and data visualizations**.
+      I worked primarily with **Ruby on Rails**,
+      CSS/SASS,
+      and a variety of **front-end JavaScript frameworks**,
   - location: Code for San Francisco
     dates: Jan 2015 - Present
-    title: Lead Developer, SF OpenReferral
+    title: Lead Developer (Volunteer), SF OpenReferral
     category: Community
     description: |
       San Francisco's OpenReferral initiative
-      is working with the local Reentry Council
+      worked with the local Adult Probation Department
       to collect, standardize, and publish
-      data about social services in the city.
+      data about social service resources in the city.
       As the lead developer,
-      I **coordinate the efforts of several volunteers**,
+      I built several prototypes of the resource guide
+      to better explore the problem space.
+      I also helped to **coordinate the efforts of several volunteers**,
       run **user interviews**,
       and work closely with other project leads
       to **define the direction of the project**.
   - location: Carbon Cash, LLC
     dates: Dec 2013 - Jun 2014
     title: API Designer & Developer
-    description: Carbon Cash is a Michigan-based startup that rewards students for good energy usage habits. I designed and implemented an **API to support iOS, Android, and client-side Ember web apps**, and handled hosting and server maintenance.  The system was **built on Rails** and integrated with local power companies and university housing systems to retrieve data about students' energy usage.
+    description:
+      Carbon Cash is a Michigan-based startup
+      that rewards students for good energy usage habits.
+      I designed and implemented
+      an **API to support iOS, Android, and client-side Ember web apps**,
+      and handled hosting and server maintenance.
+      The system was **built on Rails**
+      and integrated with local power companies and university housing systems
+      to retrieve data about students' energy usage.
   - location: Eurucamp 2014
     dates: Aug 2014
     title: 'Conference Talk: Service-Oriented Architecture'
     category: Community
-    description: In front of an audience of several hundred Rubyists, I created and delivered a live-coded introduction to **Service-Oriented Architectures**. Designed to help developers break their first service out of a monolithic application, the talk covered **inter-process messaging protocols, alternative data stores, and lightweight web frameworks**
+    description:
+      In front of an audience of several hundred developers,
+      I created and delivered a live-coded introduction
+      to **Service-Oriented Architectures**.
+      Designed to help developers break their first service
+      out of a monolithic application,
+      the talk covered **inter-process messaging protocols,
+      alternative data stores,
+      and lightweight web frameworks**.
   - location: BitLab, MSU
     dates: Oct 2012 - Mar 2014
     title: Web Developer & Research Assistant
-    description: The BitLab at MSU studies the boundaries of computer-human interaction, including the economic trends of crowdfunding sites. To collect better data the team built a crowdfunding site for MSU students that collects data about why people contribute to crowdfunded projects. As the sole developer working on an existing code base I was responsible for **redesigning the site, setting up automated testing, running usability studies, and integrating the site with Amazon Payments**.
+    description:
+      The BitLab at MSU studies the boundaries of computer-human interaction,
+      including the economic trends of crowdfunding sites.
+      To collect better data the team built a crowdfunding site for MSU students
+      that collects data about why people contribute to crowdfunded projects.
+      As the sole developer working on an existing code base
+      I was responsible for **redesigning the site,
+      setting up automated testing
+      running usability studies
+      and integrating the site with Amazon Payments**.
   - location: ACM at MSU
     dates: Mar 2011 - May 2014
     title: Vice President and Webmaster
     category: Community
-    description: The Association of Computing Machinery is an international organization that provides resources to students in Computer Science and related fields. As a founding member of the MSU chapter I **organized student events** including technology talks and seminars with local tech companies, programming contests, and hackathons. I also **gave presentations about programming** and the field of computer science.
+    description:
+      The Association of Computing Machinery is an international organization
+      that provides resources
+      to students in Computer Science and related fields.
+      As a founding member of the MSU chapter
+      I **organized student events**
+      including technology talks and seminars with local tech companies,
+      programming contests,
+      and hackathons.
+      I also **gave presentations about programming**
+      and the field of computer science.
   - location: Spectrum Health
     dates: Sep - Dec 2012
     title: Medication Shortages Dashboard
-    description: "Through the senior design program at MSU's computer science department I worked with doctors and pharmacists at Spectrum Health to create an \"issue tracker\" for medication shortages. The **Rails app** used **Javascript visualization libraries** to display data pulled from the FDA, and helped pharmacists discuss and create plans to outlast shortages."
+    description:
+      "Through the senior design program at MSU's computer science department
+      I worked with doctors and pharmacists at Spectrum Health
+      to create an \"issue tracker\" for medication shortages.
+      The **Rails app** used **Javascript visualization libraries**
+      to display data pulled from the FDA,
+      and helped pharmacists discuss and create plans to outlast shortages."
   - location: Microsoft
     dates: May - July 2012
     title: Software Engineering Intern
-    description: During my three-month internship at Microsoft I was responsible for developing a **testing framework** for third-party printer drivers in Windows 8 using **C++ and Javascript**. I worked with team members in the Sustainability Engineering department to simplify the verification process for new printer driver submissions.
+    description:
+      During my three-month internship at Microsoft
+      I was responsible for developing a **testing framework**
+      for third-party printer drivers in Windows 8
+      using **C++ and Javascript**.
+      I worked with team members in the Sustainability Engineering department
+      to simplify the verification process for new printer driver submissions.
   - location: BEACON Lab, MSU
     dates: Sep 2011 - May 2012
     title: Digital Evolution Research
     category: Research
-    description: The BEACON Lab studies evolution with using novel techniques, including the creation and observation of **evolving computer programs**. As a research assistant I was responsible for implementing the ability for programs to feed off of one another, leading to predatory behavior in a population.  Working closely with a postdoctoral advisor I **implemented and tested the behavior in C++**. The predator-prey features provided a basis for several future publications.
+    description:
+      The BEACON Lab studies evolution with using novel techniques,
+      including the creation and observation of **evolving computer programs**.
+      As a research assistant
+      I was responsible for implementing the ability
+      for programs to feed off of one another,
+      leading to predatory behavior in a population.
+      Working closely with a postdoctoral advisor
+      I **implemented and tested the behavior in C++**.
+      The predator-prey features
+      provided a basis for several future publications.
   - location: CSE Department, MSU
     dates: Sep - Dec 2011
     title: 'Teaching Assistant: Introduction to Programming'
     category: Community
-    description: As a teaching assistant for the introductory programming course at MSU, I **led lab sections and held help room hours**. Through grading program submissions and helping students one-on-one, I spent many hours teaching **programming concepts, techniques, and best practices**.
+    description:
+      As a teaching assistant for the introductory programming course at MSU,
+      I **led lab sections and held help room hours**.
+      Through grading program submissions and helping students one-on-one,
+      I spent many hours teaching
+      **programming concepts, techniques, and best practices**.
