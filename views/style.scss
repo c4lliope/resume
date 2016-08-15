@@ -66,6 +66,7 @@ ul {
   margin-top: $gutter;
   #profile {
     @include span-columns(3 of 12);
+    border-radius: 50%;
   }
   h1 {
     @include media($tiny) {
