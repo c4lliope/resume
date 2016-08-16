@@ -7,9 +7,10 @@
         </div>
       </div>
     <% end %>
+
     <div class="position">
-      <span class="title"><%= experience['title'] %></span>
       <span class="location"><%= experience['location'] %></span>
+      <span class="title"><%= experience['title'] %></span>
       <span class="dates"><%= experience['dates'].gsub('-', '&ndash;') %></span>
     </div>
     <%= markdown experience['description'] %>
