@@ -45,6 +45,10 @@ a {
    }
 }
 
+.intro {
+  overflow: hidden;
+}
+
 #content {
   @include media($medium) {
     padding-left: $gutter;
