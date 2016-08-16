@@ -3,6 +3,7 @@ experiences:
   - location: Code for America
     dates: Jan 2016 - Nov 2016
     title: Fellow
+    published: true
     description: |
       [Our three-person team](https://www.codeforamerica.org/why-government/our-partners/seattle-wa/)
       is working with the Seattle Police Department (SPD) for one year
@@ -22,6 +23,7 @@ experiences:
   - location: thoughtbot, inc
     dates: Nov 2014 - Dec 2015
     title: Developer
+    published: true
     description: |
       thoughtbot (yes, it's spelled lowercase)
       is a leading web and mobile application consulting company.
@@ -41,6 +43,7 @@ experiences:
     dates: Jan 2015 - Dec 2015
     title: Lead Developer (Volunteer), SF OpenReferral
     category: Community
+    published: true
     description: |
       San Francisco's OpenReferral initiative
       worked with the local Adult Probation Department
@@ -56,6 +59,7 @@ experiences:
   - location: Carbon Cash, LLC
     dates: Dec 2013 - Jun 2014
     title: API Designer & Developer
+    published: true
     description: |
       Carbon Cash is a Michigan-based startup
       that rewards students for good energy usage habits.
@@ -69,6 +73,7 @@ experiences:
     dates: Aug 2014
     title: 'Conference Talk: Service-Oriented Architecture'
     category: Community
+    published: true
     description: |
       In front of an audience of several hundred developers,
       I created and delivered a live-coded introduction
@@ -81,6 +86,7 @@ experiences:
   - location: BitLab, MSU
     dates: Oct 2012 - Mar 2014
     title: Web Developer & Research Assistant
+    published: true
     description: |
       The BitLab at MSU studies the boundaries of computer-human interaction,
       including the economic trends of crowdfunding sites.
@@ -95,6 +101,7 @@ experiences:
     dates: Mar 2011 - May 2014
     title: Vice President and Webmaster
     category: Community
+    published: true
     description: |
       The Association of Computing Machinery is an international organization
       that provides resources
@@ -109,6 +116,7 @@ experiences:
   - location: Spectrum Health
     dates: Sep - Dec 2012
     title: Medication Shortages Dashboard
+    published: true
     description: |
       Through the senior design program at MSU's computer science department
       I worked with doctors and pharmacists at Spectrum Health
@@ -119,6 +127,7 @@ experiences:
   - location: Microsoft
     dates: May - July 2012
     title: Software Engineering Intern
+    published: true
     description: |
       During my three-month internship at Microsoft
       I was responsible for developing a **testing framework**
@@ -130,6 +139,7 @@ experiences:
     dates: Sep 2011 - May 2012
     title: Digital Evolution Research
     category: Research
+    published: true
     description: |
       The BEACON Lab studies evolution with using novel techniques,
       including the creation and observation of **evolving computer programs**.
@@ -145,6 +155,7 @@ experiences:
     dates: Sep - Dec 2011
     title: 'Teaching Assistant: Introduction to Programming'
     category: Community
+    published: false
     description: |
       As a teaching assistant for the introductory programming course at MSU,
       I **led lab sections and held help room hours**.
