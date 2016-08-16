@@ -18,6 +18,11 @@ a {
   color: $black;
 }
 
+strong,
+.location {
+  color: $blue;
+}
+
 #content { max-width: 95%; }
 
 #header {
