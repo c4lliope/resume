@@ -40,6 +40,20 @@ experiences:
       I worked primarily with **Ruby on Rails**,
       CSS/SASS,
       and a variety of **front-end JavaScript frameworks**,
+  - location: Administrate
+    dates: January 2015 - Dec 2015
+    title: Lead Developer
+    category: Community
+    published: true
+    description: |
+      I designed and built [**Administrate**](https://github.com/thoughtbot/administrate),
+      an **open-source library** for Ruby on Rails apps
+      that **automatically generates admin dashboards**.
+      To build Administrate
+      I **ran user interviews**,
+      triaged and responded to community bug reports and feature requests,
+      and **coordinated the work of several designers and developers**
+      at thoughtbot.
   - location: Code for San Francisco
     dates: Jan 2015 - Dec 2015
     title: Lead Developer (Volunteer), SF OpenReferral
@@ -117,7 +131,7 @@ experiences:
   - location: Spectrum Health
     dates: Sep - Dec 2012
     title: Medication Shortages Dashboard
-    published: true
+    published: false
     description: |
       Through the senior design program at MSU's computer science department
       I worked with doctors and pharmacists at Spectrum Health
