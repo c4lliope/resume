@@ -3,6 +3,8 @@ require "sinatra/reloader"
 require "yaml"
 require "redcarpet"
 
+set :bind, '0.0.0.0'
+
 class HTMLWithPants < Redcarpet::Render::HTML
   include Redcarpet::Render::SmartyPants
 end
