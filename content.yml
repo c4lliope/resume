@@ -5,21 +5,19 @@ experiences:
     title: Fellow
     published: true
     description: |
-      [Our three-person team](https://www.codeforamerica.org/why-government/our-partners/seattle-wa/)
-      is working with the Seattle Police Department (SPD) for one year
-      to build an internal application for patrol officers
-      that provides personalized information
-      about people with mental illnesses or chemical dependencies.
-      Our goal is
-      to **help officers refer people to community-provided solutions**
+      Our team worked with the Seattle Police Department for one year
+      to help patrol officers respond appropriately
+      to people with mental illnesses or chemical dependencies.
+      We designed and developed an internal web app
+      to **help officers refer people to community services**
       instead of defaulting to arrest or hospitalization.
-      As the sole developer on the project,
-      I am responsible for **creating a secure system**
-      compliant with federal criminal justice data regulations,
-      **managing stakeholders within city government**,
-      and **communicating technical needs & issues** within my team.
-      I have **led several workshops** for city IT department employees
-      to train them on modern application development practices,
+      As the **sole developer** on the project,
+      I created a secure system
+      **compliant with HIPAA and CJIS regulations**,
+      coordinated with **stakeholders within the City of Seattle government**,
+      and **managed technical needs & issues** within my team.
+      I **led technical workshops** for city IT department employees
+      to train them on modern technologies,
       including **Ruby on Rails** and **Docker**.
   - location: thoughtbot, inc
     dates: Nov 2014 - Dec 2015
@@ -52,7 +50,7 @@ experiences:
       To build Administrate
       I **ran user interviews**,
       triaged and responded to community bug reports and feature requests,
-      and **coordinated the work of several designers and developers**
+      and **coordinated the work of designers and developers**
       at thoughtbot.
   - location: Code for San Francisco
     dates: Jan 2015 - Dec 2015
@@ -65,9 +63,9 @@ experiences:
       to collect, standardize, and publish
       data about social service resources in the city.
       As the lead developer,
-      I built several prototypes of the resource guide
+      I built prototypes of the resource guide
       to better explore the problem space.
-      I also helped to **coordinate the efforts of several volunteers**,
+      I also helped to **coordinate the efforts of volunteers**,
       run **user interviews**,
       and work closely with other project leads
       to **define the direction of the project**.
@@ -165,7 +163,7 @@ experiences:
       Working closely with a postdoctoral advisor
       I **implemented and tested the behavior in C++**.
       The predator-prey features
-      provided a basis for several future publications.
+      provided a basis for future publications.
   - location: CSE Department, MSU
     dates: Sep - Dec 2011
     title: 'Teaching Assistant: Introduction to Programming'
