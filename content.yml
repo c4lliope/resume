@@ -1,24 +1,23 @@
 ---
 experiences:
+
   - location: Code for America
     dates: Jan 2016 - Nov 2016
     title: Fellow
     published: true
     description: |
       Our team worked with the Seattle Police Department for one year
-      to help patrol officers respond appropriately
-      to people with mental illnesses or chemical dependencies.
-      We designed and developed an internal web app
-      to **help officers refer people to community services**
-      instead of defaulting to arrest or hospitalization.
-      As the **sole developer** on the project,
-      I created a secure system
-      **compliant with HIPAA and CJIS regulations**,
-      coordinated with **stakeholders within the City of Seattle government**,
-      and **managed technical needs & issues** within my team.
-      I **led technical workshops** for city IT department employees
+      to help officers make referrals to community services
+      instead of arrests or hospitalizations.
+      As the developer on the team,
+      I created a system
+      compliant with HIPAA and CJIS security regulations,
+      **coordinated with the City of Seattle government**,
+      and managed technical needs & issues within my team.
+      **I led technical workshops for city IT employees**
       to train them on modern technologies,
-      including **Ruby on Rails** and **Docker**.
+      including Ruby on Rails and Docker.
+
   - location: thoughtbot, inc
     dates: Nov 2014 - Dec 2015
     title: Developer
@@ -27,7 +26,7 @@ experiences:
       thoughtbot (yes, it's spelled lowercase)
       is a leading web and mobile application consulting company.
       As a developer,
-      I **worked directly with clients**
+      **I worked directly with clients**
       both at startups and established companies,
       and built features including
       **social networks,
@@ -35,23 +34,22 @@ experiences:
       automated emails,
       third-party API integrations,
       and data visualizations**.
-      I worked primarily with **Ruby on Rails**,
-      CSS/SASS,
-      and a variety of **front-end JavaScript frameworks**,
+
   - location: Administrate
     dates: January 2015 - Dec 2015
     title: Lead Developer
     category: Community
     published: true
     description: |
-      I designed and built [**Administrate**](https://github.com/thoughtbot/administrate),
-      an **open-source library** for Ruby on Rails apps
-      that **automatically generates admin dashboards**.
+      I designed and built [Administrate](https://github.com/thoughtbot/administrate),
+      an open-source library
+      that automatically generates admin dashboards for Ruby on Rails apps.
       To build Administrate
-      I **ran user interviews**,
+      **I ran user interviews**,
       triaged and responded to community bug reports and feature requests,
       and **coordinated the work of designers and developers**
       at thoughtbot.
+
   - location: Code for San Francisco
     dates: Jan 2015 - Dec 2015
     title: Lead Developer (Volunteer), SF OpenReferral
@@ -69,10 +67,11 @@ experiences:
       run **user interviews**,
       and work closely with other project leads
       to **define the direction of the project**.
+
   - location: Carbon Cash, LLC
     dates: Dec 2013 - Jun 2014
     title: API Designer & Developer
-    published: true
+    published: false
     description: |
       Carbon Cash is a Michigan-based startup
       that rewards students for good energy usage habits.
@@ -82,6 +81,7 @@ experiences:
       The system was **built on Rails**
       and integrated with local power companies and university housing systems
       to retrieve data about students' energy usage.
+
   - location: Eurucamp 2014
     dates: Aug 2014
     title: 'Conference Talk: Service-Oriented Architecture'
@@ -96,10 +96,12 @@ experiences:
       the talk covered **inter-process messaging protocols,
       alternative data stores,
       and lightweight web frameworks**.
+
   - location: BitLab, MSU
     dates: Oct 2012 - Mar 2014
     title: Web Developer & Research Assistant
-    published: true
+    category: Research
+    published: false
     description: |
       The BitLab at MSU studies the boundaries of computer-human interaction,
       including the economic trends of crowdfunding sites.
@@ -110,6 +112,7 @@ experiences:
       setting up automated testing
       running usability studies
       and integrating the site with Amazon Payments**.
+
   - location: ACM at MSU
     dates: Mar 2011 - May 2014
     title: Vice President and Webmaster
@@ -126,6 +129,7 @@ experiences:
       and hackathons.
       I also **gave presentations about programming**
       and the field of computer science.
+
   - location: Spectrum Health
     dates: Sep - Dec 2012
     title: Medication Shortages Dashboard
@@ -137,6 +141,7 @@ experiences:
       The **Rails app** used **Javascript visualization libraries**
       to display data pulled from the FDA,
       and helped pharmacists discuss and create plans to outlast shortages.
+
   - location: Microsoft
     dates: May - July 2012
     title: Software Engineering Intern
@@ -148,6 +153,7 @@ experiences:
       using **C++ and Javascript**.
       I worked with team members in the Sustainability Engineering department
       to simplify the verification process for new printer driver submissions.
+
   - location: BEACON Lab, MSU
     dates: Sep 2011 - May 2012
     title: Digital Evolution Research
@@ -164,6 +170,7 @@ experiences:
       I **implemented and tested the behavior in C++**.
       The predator-prey features
       provided a basis for future publications.
+
   - location: CSE Department, MSU
     dates: Sep - Dec 2011
     title: 'Teaching Assistant: Introduction to Programming'
