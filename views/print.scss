@@ -83,10 +83,6 @@ strong,
     position: relative;
     height: auto;
 
-    .ribbon-wrapper {
-      display: none;
-    }
-
     .category {
       display: block !important;
       &.community { color: $blue; }
@@ -95,10 +91,18 @@ strong,
 
     .description { padding-top: 0; }
     p {
-      @include span-columns(9 of 12);
+      @include span-columns(8 of 12);
     }
     padding: 0px;
     border: none;
     box-shadow: none;
+  }
+}
+
+.ribbon-wrapper {
+  @include span-columns(1 of 12);
+
+  .ribbon {
+    @include transform(rotate(-90deg));
   }
 }
