@@ -41,7 +41,7 @@ experiences:
     category: Community
     published: true
     description: |
-      I designed and built [Administrate](https://github.com/thoughtbot/administrate),
+      I designed and built [Administrate](http://administrate-prototype.herokuapp.com/),
       an open-source library
       that automatically generates admin dashboards for Ruby on Rails apps.
       To build Administrate
