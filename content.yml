@@ -1,18 +1,31 @@
 ---
 experiences:
 
+  - location: Assemble LLC
+    dates: Jan 2017 - Present
+    title: Lead programmer
+    published: true
+    description: |
+      Commission-based web design and development,
+      including a point-of-sale console,
+      systems analysis and reporting,
+      a multilingual medical application,
+      and an e-commerce platform.
+
+
   - location: Code for America
-    dates: Jan 2016 - Nov 2016
+    dates: Jan 2016 - Dec 2016
     title: Fellow
     published: true
     description: |
-      Our team worked with the Seattle Police Department for one year
+      Our three-person team worked with the Seattle Police Department
+      for one year
       to help officers make referrals to community services
-      instead of arrests or hospitalizations.
+      instead of arrests.
       As the developer on the team,
       I created a system
-      compliant with HIPAA and CJIS security regulations,
-      **coordinated with the City of Seattle government**,
+      compliant with **HIPAA and CJIS security** regulations,
+      coordinated with the City of Seattle government,
       and managed technical needs & issues within my team.
       **I led technical workshops for city IT employees**
       to train them on modern technologies,
@@ -23,10 +36,9 @@ experiences:
     title: Developer
     published: true
     description: |
-      thoughtbot (yes, it's spelled lowercase)
-      is a leading web and mobile application consulting company.
+      thoughtbot is a leading web and mobile application development studio.
       As a developer,
-      **I worked directly with clients**
+      I worked directly with clients
       both at startups and established companies,
       and built features including
       **social networks,
@@ -71,7 +83,7 @@ experiences:
   - location: Carbon Cash, LLC
     dates: Dec 2013 - Jun 2014
     title: API Designer & Developer
-    published: false
+    published: true
     description: |
       Carbon Cash is a Michigan-based startup
       that rewards students for good energy usage habits.
@@ -101,7 +113,7 @@ experiences:
     dates: Oct 2012 - Mar 2014
     title: Web Developer & Research Assistant
     category: Research
-    published: false
+    published: true
     description: |
       The BitLab at MSU studies the boundaries of computer-human interaction,
       including the economic trends of crowdfunding sites.
@@ -175,7 +187,7 @@ experiences:
     dates: Sep - Dec 2011
     title: 'Teaching Assistant: Introduction to Programming'
     category: Community
-    published: false
+    published: true
     description: |
       As a teaching assistant for the introductory programming course at MSU,
       I **led lab sections and held help room hours**.
