@@ -33,8 +33,9 @@ strong,
   overflow: visible;
   @include span-columns(8 of 12);
   #profile {
-    @include span-columns(2 of 12);
     margin-bottom: $gutter/2;
+    height: 12em;
+    width: 12em;
   }
   p { margin-bottom: $gutter/2; }
   margin-bottom: $gutter;

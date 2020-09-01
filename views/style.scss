@@ -76,6 +76,8 @@ ul {
   #profile {
     @include span-columns(3 of 12);
     border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
   }
   h1 {
     @include media($tiny) {
