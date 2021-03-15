@@ -9,7 +9,10 @@ experiences:
       Commission-based web design and development.
       I helped varied companies build a point-of-sale console,
       systems analysis and reporting pipelines,
-      and a multilingual medical application.
+      and a multilingual medical application.  
+      A focus has been on building a novel programming engine,
+      based on click-and-choose interactions such as can be used on Squarespace.
+      Code is public, at https://github.com/assembleapp/hierarch .
 
   - location: Code for America
     dates: Jan 2016 - Dec 2016
