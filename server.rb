@@ -5,13 +5,6 @@ require "redcarpet"
 
 set :bind, '0.0.0.0'
 
-class HTMLWithPants < Redcarpet::Render::HTML
-  include Redcarpet::Render::SmartyPants
-end
-
-Tilt.register Tilt::RedcarpetTemplate::Redcarpet2, 'markdown', 'mkd', 'md'
-set :markdown, renderer: HTMLWithPants
-
 get "/" do
   @data = YAML.load_file "content.yml"
   erb :index
